@@ -1,0 +1,19 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local environment / secrets (none committed; belt-and-braces)
+*.env
+.env*
+*credential*
+*secret*
+*.key
+*.pem
+
+# Node (if browser MCP installs anything locally)
+node_modules/
+
+# Local Chrome debug profile (created by Start-GROOT-Chrome.bat, not part of the repo)
+GROOT-Chrome-Profile/
