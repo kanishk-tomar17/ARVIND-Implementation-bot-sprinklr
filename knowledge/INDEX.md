@@ -45,39 +45,117 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 |---|---|---|
 | Overview (112) | ✅ | guided-workflow/overview.md |
 | Screen Creation (113) | ✅ | guided-workflow/screen-creation.md |
-| Input components — variable (114) | ⬜ | guided-workflow/input-components.md |
-| API node (115) | ⬜ | guided-workflow/api-node.md |
-| Groovy Scripts (116) | ⬜ | guided-workflow/groovy-scripts.md |
-| Variables & Resource Manager (117) | ⬜ | guided-workflow/variables-resource-manager.md |
-| Records manipulation (118, subfolder "…CreateGetUpdate") | ⬜ | guided-workflow/records-manipulation.md |
-| Record Page Basics (119) | ⬜ | guided-workflow/record-page-basics.md |
-| Public-facing Guided Workflows (120) | ⬜ | guided-workflow/public-facing.md |
+| Input components — variable (114) | ✅ | guided-workflow/input-components.md |
+| API node (115) | ✅ | guided-workflow/api-node.md |
+| Groovy Scripts (116) | ✅ | guided-workflow/groovy-scripts.md |
+| Variables & Resource Manager (117) | ✅ | guided-workflow/variables-resource-manager.md |
+| Records manipulation (118, subfolder "…CreateGetUpdate") | ✅ | guided-workflow/records-manipulation.md |
+| Record Page Basics (119) | ✅ | guided-workflow/record-page-basics.md |
+| Public-facing Guided Workflows (120) | ✅ | guided-workflow/public-facing.md |
 
-## Conversational AI (15 items) — bot building
+> **Folder structure confirmed June 2026 (corrected).** Two layouts exist in `Product Foundation Courses/`:
+> - **Hyphenated module folders** (e.g. `Guided Workflow - <topic>`, `Care Console - <topic>`) → each contains a numbered subfolder `NNN_<same name>` → `NNN_<same name>.mp4`.
+> - **Single-word module folders** (e.g. `Conversational AI`, `Sprinklr Services`) → contain numbered item folders `NNN_<Module> - <topic>` → `NNN_<Module> - <topic>.mp4`.
+> The INDEX's earlier "Conversational AI/Community/Email Care item counts" were guesses; the real module list is below.
+
+## Conversational AI (folder: `Conversational AI`; items 096–110)
 | Topic | Status | KB file |
 |---|---|---|
-| (enumerate subfolder — bot flows, intents, NLU, etc.) | ⬜ | conversational-ai/*.md |
+| Discovery Run (096) | ✅ | conversational-ai/discovery-run.md |
+| Intents & Intent creation (097) | ✅ | conversational-ai/intents.md |
+| Entities & Entity creation (098) | ✅ | conversational-ai/entities.md |
+| Basics of Dialogue Tree (099) | ✅ | conversational-ai/dialogue-tree-basics.md |
+| Different Nodes in a Dialogue Tree — Basic (100) | ✅ | conversational-ai/dialogue-nodes-basic.md |
+| Different Nodes in a Dialogue Tree — Advanced (101) | ✅ | conversational-ai/dialogue-nodes-advanced.md |
+| API Node (102) | ✅ | conversational-ai/api-node.md |
+| FAQ Bots (103) | ✅ | conversational-ai/faq-bots.md |
+| Bot Rule Setup (105) | ✅ | conversational-ai/bot-rule-setup.md |
+| Message Validation & Intent Test Projects (106) | ✅ | conversational-ai/message-validation.md |
+| Golden Test Set & Version Control (107) | ✅ | conversational-ai/golden-test-set.md |
+| Application Testing (108) | ✅ | conversational-ai/application-testing.md |
+| Standard Reporting Dashboard (110) | ✅ | conversational-ai/standard-reporting.md |
 
-## Community (11 items)
+## Live Chat (hyphenated folders `Live Chat - <topic>`; 12)
 | Topic | Status | KB file |
 |---|---|---|
-| (enumerate subfolder — community builder, moderation, etc.) | ⬜ | community/*.md |
+| Basics of Live chat (085) | ✅ | live-chat/basics.md |
+| Live Chat Builder (086) | 🟡 transcript stuck | live-chat/builder.md (086 transcript hung server-side 2026-06-15; re-generate & ingest next pass) |
+| Live chat customisation (087) | ✅ | live-chat/customisation.md |
+| Live chat web setup and SDKs (091) | ✅ | live-chat/web-setup-sdks.md |
+| Live chat mobile implementation (092) | ✅ | live-chat/mobile.md |
+| Live chat user authentication (093) | ✅ | live-chat/user-authentication.md |
+| Live chat rule actions (089) | ✅ | live-chat/rule-actions.md |
+| Live chat specific reporting metrics (090) | ✅ | live-chat/reporting-metrics.md |
+| Proactive Prompt Builder and Rule Configuration (095) | ✅ | live-chat/proactive-prompts.md |
+| Video call and co-browsing configuration (094) | ✅ | live-chat/video-cobrowsing.md |
+| Chat deflection (088) | ✅ | live-chat/chat-deflection.md |
 
-## Email Care (7 items)
+## Unified Routing (hyphenated folders `Unified Routing - <topic>`; 8)
 | Topic | Status | KB file |
 |---|---|---|
-| (enumerate subfolder) | ⬜ | email-care/*.md |
+| Routing types (029) | ✅ | unified-routing/routing-types.md |
+| Routing configuration (025) | ✅ | unified-routing/routing-configuration.md |
+| Capacity configuration (024) | ✅ | unified-routing/capacity-configuration.md |
+| Agent Skills and skill groups (023) | ✅ | unified-routing/agent-skills.md |
+| Smart routing (028) | ✅ | unified-routing/smart-routing.md |
+| Stickiness, capacity, timeout settings (026) | ✅ | unified-routing/stickiness-timeout.md |
+| Average wait time / number in queue (027) | ✅ | unified-routing/wait-time-queue.md |
+| Troubleshooting Assignment issues (030) | ✅ | unified-routing/troubleshooting-assignment.md |
 
-## Live Chat
+## Outbound Voice (hyphenated folders `Outbound Voice - <topic>`; 13)
 | Topic | Status | KB file |
 |---|---|---|
-| User authentication | ⬜ | live-chat/user-authentication.md |
-| Specific reporting metrics | ⬜ | live-chat/reporting-metrics.md |
-| Rule actions | ⬜ | live-chat/rule-actions.md |
-| (+ Basics, Builder, Customisation, Web setup & SDKs, Mobile, Video call & co-browsing, Chat deflection — confirm in folder) | ⬜ | live-chat/*.md |
+| Voice Campaign Creation (166) | ✅ | outbound-voice/campaign-creation.md |
+| Data Ingestion (163) | ✅ | outbound-voice/data-ingestion.md |
+| Dialers (Predictive, Preview etc.) (164) | ✅ | outbound-voice/dialers.md |
+| Voice Campaigns — Retry Strategy and Dial Plan (165) | ✅ | outbound-voice/retry-strategy.md |
+| Voice Campaigns — Suppression List (167) | ✅ | outbound-voice/suppression-list.md |
+| Skill based assignment in Voice Campaigns (168) | ✅ | outbound-voice/skill-based-assignment.md |
+| Manual Call and Call Controls (170) | ✅ | outbound-voice/manual-call-controls.md |
+| Callback (173) | ✅ | outbound-voice/callback.md |
+| Agent Desktop (172) | ✅ | outbound-voice/agent-desktop.md |
+| ACW (171) | ✅ | outbound-voice/acw.md |
+| Post Call Workflow (169) | ✅ | outbound-voice/post-call-workflow.md |
+| Reporting (174) | ✅ | outbound-voice/reporting.md |
 
-## Below the fold — to enumerate next session
-Unified Routing (routing config, capacity, smart routing, wait times, troubleshooting), Outbound Voice (data ingestion, ACW, post-call workflow, suppression list, retry strategy, skill-based assignment), Sandbox/ALM & Change Management (sandbox features, refresh, inbound/outbound changesets, tiered approvals), Knowledge Base (builder features, community builder). Re-list the Product Foundation Courses folder to capture exact folder names.
+## Sandbox / ALM (hyphenated folders `Sandbox - <topic>`; 5)
+| Topic | Status | KB file |
+|---|---|---|
+| Sandbox Features | ⬜ | sandbox/features.md |
+| Sandbox Refresh | ⬜ | sandbox/refresh.md |
+| Inbound Change sets | ⬜ | sandbox/inbound-changesets.md |
+| Outbound Change sets | ⬜ | sandbox/outbound-changesets.md |
+| Application Lifecycle Management and best practices | ⬜ | sandbox/alm-best-practices.md |
+
+## Knowledge Base (hyphenated folders `Knowledge Base - <topic>`; 7)
+| Topic | Status | KB file |
+|---|---|---|
+| Enablement of Knowledge Base | ⬜ | knowledge-base/enablement.md |
+| Users, User Groups, Permissions, Personas, Roles | ⬜ | knowledge-base/users-permissions.md |
+| Tiered Approval Workflow | ⬜ | knowledge-base/tiered-approval.md |
+| Community Builder (mapping, article ordering, etc.) | ⬜ | knowledge-base/community-builder.md |
+| Integration (Smart Assist, Smart Comprehend, Sprinklr AI+, Bot) | ⬜ | knowledge-base/integration.md |
+| Change Management (Inbound/Outbound Changesets) | ⬜ | knowledge-base/change-management.md |
+| Knowledge Base Reporting (dashboard import, visualisations) | ⬜ | knowledge-base/reporting.md |
+
+## Sprinklr Services (folder: `Sprinklr Services`; Case Management done elsewhere)
+| Topic | Status | KB file |
+|---|---|---|
+| Case Management (016–021) | ✅ | case-management/*.md (done — see Case Management section) |
+| Governance | ⬜ | sprinklr-services/governance.md |
+| Rule Engine | ⬜ | sprinklr-services/rule-engine.md |
+
+## Other module folders — not yet enumerated (single-word folders)
+Each likely holds numbered `NNN_<Module> - <topic>` item folders; enumerate when reached:
+- **Community**
+- **Email Care**
+- **Inbound Voice**
+- **Journey Facilitator**
+- **Messaging**
+- **Quality Management**
+- **Reporting**
+- **Supervisor Console**
+- Top-level `01_Process Foundation.mp4` (CCaaS Voice overview) — still ⬜.
 
 ---
 
