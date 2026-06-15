@@ -1,0 +1,43 @@
+{
+  "_comment": "Top-level help-center structure (scraped from sprinklr.com/help home 2026-06-15). Recurse each area root via category(id){categories} to enumerate all categories; conversations(categoryIds:[id]) for articles.",
+  "areas": [
+    { "name": "Sprinklr Service", "id": "63a06e77ade47b6ab9419d92", "kb_target": "service/ + enrich existing service modules",
+      "top_subcategories": [
+        {"title": "Getting Started", "id": "63a071e9a94fa95d1cb1be92"},
+        {"title": "Sprinklr Service Glossary", "id": "63a2dbf9c42b5a1768c5f4d7"},
+        {"title": "Service Channels", "id": "63a071fe858d2d1474d26cc3"}
+      ] },
+    { "name": "Sprinklr Insights", "id": "6321cb9db940857ea124f7fd", "kb_target": "insights/",
+      "top_subcategories": [
+        {"title": "Getting Started", "id": "63e22c837c2dc0105179f1b6"},
+        {"title": "Sprinklr Insights Glossary", "id": "63b44f14416a273f5e9b2d3a"},
+        {"title": "Data Sources & Channels", "id": "63b4499a6ca9b97fbc217ef2"}
+      ] },
+    { "name": "Sprinklr Social", "id": "6321cbd6b940857ea1251413", "kb_target": "social/",
+      "top_subcategories": [
+        {"title": "Getting Started", "id": "6414ab7506bb6355434913f4"},
+        {"title": "Sprinklr Social Glossary", "id": "6414ab8506bb6355434919ab"},
+        {"title": "Publishing", "id": "633c5cb1a5d73616a985dabe"}
+      ] },
+    { "name": "Sprinklr Marketing", "id": "6321cbcab940857ea1250e42", "kb_target": "marketing/ + enrich journey-facilitator/, messaging/",
+      "top_subcategories": [
+        {"title": "Getting Started", "id": "63f490402e547361961414aa"},
+        {"title": "Sprinklr Marketing Glossary", "id": "63f4902a2e54736196140b47"},
+        {"title": "Ads Publishing", "id": "63eddf4efbb4dd3e50d5d72d"}
+      ] },
+    { "name": "Sprinklr AI", "id": "6941408e45e9db0a32ceec04", "kb_target": "ai-studio/ (distinct from service conversational-ai/)",
+      "top_subcategories": [
+        {"title": "AI+ Studio", "id": "66963dd5a696c73557cc730e"},
+        {"title": "AI Agents", "id": "66349f91bf2246476888ec36"},
+        {"title": "AI Copilots", "id": "694140db45e9db0a32cf06eb"},
+        {"title": "AI Use Cases", "id": "694140e745e9db0a32cf0b5a"}
+      ] },
+    { "name": "Platform", "id": "6458c37d72241235fc75aa78", "kb_target": "platform/ (reconcile with existing governance/, sandbox/)",
+      "top_subcategories": [
+        {"title": "Core Components", "id": "6457dd0873685401a39a8c70"},
+        {"title": "Governance", "id": "6457dd9e73685401a39aab5b"},
+        {"title": "Integrations", "id": "6328443925677d3d31fd6c6e"},
+        {"title": "Sandbox", "id": "64550e275d07d6494c9a5571"}
+      ] }
+  ]
+}
