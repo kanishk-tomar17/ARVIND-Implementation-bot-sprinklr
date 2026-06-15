@@ -79,7 +79,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Topic | Status | KB file |
 |---|---|---|
 | Basics of Live chat (085) | ✅ | live-chat/basics.md |
-| Live Chat Builder (086) | 🟡 transcript stuck | live-chat/builder.md (086 transcript hung server-side 2026-06-15; re-generate & ingest next pass) |
+| Live Chat Builder (086) | ✅ | live-chat/builder.md |
 | Live chat customisation (087) | ✅ | live-chat/customisation.md |
 | Live chat web setup and SDKs (091) | ✅ | live-chat/web-setup-sdks.md |
 | Live chat mobile implementation (092) | ✅ | live-chat/mobile.md |
