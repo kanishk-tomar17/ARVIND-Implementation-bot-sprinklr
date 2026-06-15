@@ -249,9 +249,36 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Calibration (178) | ✅ | quality-management/calibration.md |
 | Case Sampling via Rule Engine (179) | ✅ | quality-management/case-sampling-rule-engine.md |
 
+## Reporting (folder: `Reporting`; topics 061–084; 24)
+| Topic | Status | KB file |
+|---|---|---|
+| Organising & Creating Dashboards (061) | ✅ | reporting/organising-creating-dashboards.md |
+| Dashboard Feature Overview (062) | ✅ | reporting/dashboard-feature-overview.md |
+| Creation of a Widget (063) | ✅ | reporting/creating-widget.md |
+| Filtering (064) | ✅ | reporting/filtering.md |
+| Custom Metrics (065) | ✅ | reporting/custom-metrics.md |
+| Export & Schedule Export (066) | ✅ | reporting/export-schedule-export.md |
+| Reporting Backend Structure — Digital (067) | ✅ | reporting/backend-structure-digital.md |
+| Most Common Metrics & Dimensions (068) | ✅ | reporting/common-metrics-dimensions.md |
+| Live Reporting — Digital (069) | ✅ | reporting/live-reporting-digital.md |
+| Agent Performance — Macro/Availability/Occupancy (070) | ✅ | reporting/agent-performance-digital.md |
+| Volume & SLA (071) | ✅ | reporting/volume-sla.md |
+| Survey Reports (072) | ✅ | reporting/survey-reports.md |
+| Other Modules — KB/GW/Smart Response (073) | ✅ | reporting/other-modules-reporting.md |
+| Voice Reporting Backend Structure (074) | ✅ | reporting/voice-backend-structure.md |
+| Live Reporting — Voice / Queue Monitoring (075) | ✅ | reporting/live-reporting-voice.md |
+| Inbound Voice — IVR Reporting (076) | ✅ | reporting/inbound-voice-ivr.md |
+| Inbound Voice — Agent Performance (077) | ✅ | reporting/inbound-voice-agent-performance.md |
+| Inbound Voice — Queue Report (078) | ✅ | reporting/inbound-voice-queue-report.md |
+| Outbound Voice — Overall (079) | ✅ | reporting/outbound-voice-overall.md |
+| Outbound Voice — Campaign Management (080) | ✅ | reporting/outbound-voice-campaign-management.md |
+| Outbound Voice — Agent Performance (081) | ✅ | reporting/outbound-voice-agent-performance.md |
+| Outbound Voice — Scheduled Callback (082) | ✅ | reporting/outbound-voice-schedule-callback.md |
+| Outbound Voice — Ingestion Report (083) | ✅ | reporting/outbound-voice-ingestion-report.md |
+| Common Errors & Troubleshooting — Voice (084) | ✅ | reporting/voice-troubleshooting.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **Reporting**
 - **Supervisor Console**
 - Top-level `01_Process Foundation.mp4` (CCaaS Voice overview) — still ⬜.
 
