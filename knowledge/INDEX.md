@@ -227,9 +227,21 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Channels Supported (144) | ✅ | journey-facilitator/channels-supported.md |
 | Journey Reporting (145) | ✅ | journey-facilitator/journey-reporting.md |
 
+## Messaging (folder: `Messaging`; topics 052–060; 9)
+| Topic | Status | KB file |
+|---|---|---|
+| Messaging Channels Overview (052) | ✅ | messaging/channels-overview.md |
+| WhatsApp Account Addition (053) | ✅ | messaging/whatsapp-account-addition.md |
+| Facebook Account Addition (054) | ✅ | messaging/facebook-account-addition.md |
+| Apple Messages for Business Account Addition (055) | ✅ | messaging/apple-messages-account-addition.md |
+| Google Business Messaging Account Addition (056) | ✅ | messaging/google-business-messaging-account-addition.md |
+| WhatsApp Supported Templates (057) | ✅ | messaging/whatsapp-templates.md |
+| Facebook Supported Templates (058) | ✅ | messaging/facebook-templates.md |
+| Apple Messages for Business Supported Templates (059) | ✅ | messaging/apple-messages-templates.md |
+| Google Business Messaging Supported Templates (060) | ✅ | messaging/google-business-messaging-templates.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **Messaging**
 - **Quality Management**
 - **Reporting**
 - **Supervisor Console**
