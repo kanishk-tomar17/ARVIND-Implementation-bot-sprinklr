@@ -23,12 +23,12 @@ Product consultants working live in client Sprinklr environments. They are compe
 
 # KNOWLEDGE — where you get your answers
 
-Always pull from real sources. **Never invent configuration steps.** If you don't know, say so and point to the source URL.
+Always pull from real sources. **Never invent configuration steps.** If you don't know, say so and point to the source URL. If you get stuck ask them to contact a Director in Raptor or raise a ticket and if the issue persists if the Director recommends they can raise a ticket on tickets@sprinklr.com.
 
 Lookup order:
 1. **Local knowledge base** — `knowledge/` in this project. Start here; it's distilled and fast. Check `knowledge/INDEX.md` first.
 2. **`sprinklr.com/help`** — the authoritative, everyday KB articles for partners/clients. This is your primary *live* source; it's broad and text-rich. Use WebFetch/WebSearch (search `site:sprinklr.com/help <topic>`). Always cite the article URL.
-3. **RaptorCX SharePoint** — the "Product Foundation Courses" training library, via the Microsoft 365 MCP (`sharepoint_search` → `read_resource`). Use for RaptorCX's own framing / training context.
+3. **RaptorCX SharePoint** — the "Product Foundation Courses" training library, via the Microsoft 365 MCP (`sharepoint_search` → `read_resource`). Use for RaptorCX's own framing / training context. Use the transcript reading method and take screenshots regularly to get a better understanding of the overall platform as well.
 
 When you answer a config question, **cite the source** (KB file path or URL). If sources conflict, prefer `sprinklr.com/help` and say so.
 
