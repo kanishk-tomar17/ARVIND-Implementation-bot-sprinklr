@@ -18,4 +18,23 @@ The composer, scheduling, approvals, and content automation.
 - `web-analytics.md` — Web Analytics profiles + UTM Manager.
 - `know-more.md` — channel media guidelines, publishing permissions, FAQ, common publishing errors.
 
-### (pending) engagement, reporting, channels, advocacy, distributed, asset-manager, rule-engine, settings
+### engagement/ ✅
+The engagement dashboard — where agents read and reply to inbound/outbound social.
+- `dashboards-and-columns.md` — create dashboards, outbound/workflow/channel-specific columns, the new third pane, community management persona app.
+- `actions-and-search.md` — message actions, applying macros in engagement, search & filtering.
+- `ai-engagement.md` — Intuition engageability prediction, Smart Response Compliance, AI+ comment summaries.
+- `other-capabilities.md` — quick filters, message preview, reminders, processing clock, audit activity, NSFW blurring, hidden-attachment permissions, timed logout.
+
+### reporting/ ✅
+Social analytics dashboards, exports, alerts, SLA, the data engine, and the metrics glossary.
+- `getting-started.md` — create/manage dashboards, dashboard manager, find metrics, filters, custom-metric governance, roles & permissions.
+- `exports.md` — scheduled exports, data export capabilities, shareable links, FTP/SFTP/S3/GCP storage, export troubleshooting.
+- `standard-dashboards.md` — revamped navigation + LinkedIn/Twitter/YouTube/Campaign/Value-Realization standard dashboards.
+- `alerts.md` — reporting & widget alerts, anomaly alerts, alert roles/permissions, FAQs.
+- `sla-monitoring.md` — SLA presets, accounts in presets, holiday hours, SLA FAQs.
+- `data-engine.md` — Data Engine / Data Flow: sources, pipelines, columns, group-by, joins, execution time.
+- `glossary.md` — metrics & dimensions, organic vs paid, trend metrics, sentiment, sponsored flags, deletion/deactivation dimensions, changelog.
+- `advanced-value-realization.md` — owned/inbound channel value realization, click insights, estimated clicks, smart insights, summaries, Empower.
+- `advanced-dashboard-tools.md` — date ranges, section filtering, side-by-side compare, tooltips, widget warnings, audit activity, historical data, Google Data Studio.
+
+### (pending) channels, advocacy, distributed, asset-manager, rule-engine, settings
