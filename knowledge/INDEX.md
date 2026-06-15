@@ -166,10 +166,25 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Sprinklr Services — Case Management (done elsewhere)
 | Case Management (016–021) | ✅ | case-management/*.md |
 
+## Community (folder: `Community`; items 180–190; 11)
+| Topic | Status | KB file |
+|---|---|---|
+| Community Builder (180) | ✅ | community/community-builder.md |
+| Global and Workspace Roles & Permissions (181) | ✅ | community/global-workspace-roles.md |
+| Community-specific Message-level Rules (182) | ✅ | community/message-level-rules.md |
+| Live Chat on Community (183) | ✅ | community/live-chat-on-community.md |
+| Guided Workflow on Community (184) | ✅ | community/guided-workflow-on-community.md |
+| Spam Model (185) | ✅ | community/spam-model.md |
+| Case Management for Community (186) | ✅ | community/case-management-for-community.md |
+| Social/Single Sign-Ons (187) | ✅ | community/social-sso.md |
+| Survey on Community (188) | ✅ | community/survey-on-community.md |
+| Support Ticket / Support Cases (189) | ✅ | community/support-ticket.md |
+| Community Reporting (190) | ✅ | community/community-reporting.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
-Each likely holds numbered `NNN_<Module> - <topic>` item folders; enumerate when reached:
-- **Community**
+Each holds numbered `NNN_<Module> - <topic>` item folders; enumerate when reached:
 - **Email Care**
+- **IVR**
 - **Inbound Voice**
 - **Journey Facilitator**
 - **Messaging**
