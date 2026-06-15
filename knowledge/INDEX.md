@@ -277,10 +277,23 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Outbound Voice — Ingestion Report (083) | ✅ | reporting/outbound-voice-ingestion-report.md |
 | Common Errors & Troubleshooting — Voice (084) | ✅ | reporting/voice-troubleshooting.md |
 
-## Other module folders — not yet enumerated (single-word folders)
-Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **Supervisor Console**
-- Top-level `01_Process Foundation.mp4` (CCaaS Voice overview) — still ⬜.
+## Supervisor Console (folder: `Supervisor Console`; topics 042–050; 9)
+| Topic | Status | KB file |
+|---|---|---|
+| Home Page Features (042) | ✅ | supervisor-console/home-page-features.md |
+| Agent Monitoring Features (043) | ✅ | supervisor-console/agent-monitoring.md |
+| Queue Monitoring Features (044) | ✅ | supervisor-console/queue-monitoring.md |
+| Callback Monitoring Features (045) | ✅ | supervisor-console/callback-monitoring.md |
+| Campaign Monitoring Features (046) | ✅ | supervisor-console/campaign-monitoring.md |
+| Announcement Features (047) | ✅ | supervisor-console/announcement.md |
+| Peer to Peer Chat Features (048) | ✅ | supervisor-console/peer-to-peer-chat.md |
+| Supervisor Console Best Practices (049) | ✅ | supervisor-console/best-practices.md |
+| Persona Builder (050) | ✅ | supervisor-console/persona-builder.md |
+
+## Loose ends
+- Top-level `01_Process Foundation.mp4` (CCaaS overview) — transcript generating; KB pending → `process-foundation.md`.
+- **IVR 151 PCI input** — transcript now exists; re-scrape to enrich `ivr/pci-input.md` (currently slide-only).
+- **KB 126 Builder Features** — ❌ NO local source (empty folder, no PDF/video); needs sprinklr.com/help or live.
 
 ---
 
