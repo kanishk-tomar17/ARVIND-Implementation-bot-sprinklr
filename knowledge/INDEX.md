@@ -216,10 +216,19 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Disposition plan (161) | ✅ | inbound-voice/disposition-plan.md |
 | ACW builder (162) | ✅ | inbound-voice/acw-builder.md |
 
+## Journey Facilitator (folder: `Journey Facilitator`; topics 139–145; 7)
+| Topic | Status | KB file |
+|---|---|---|
+| Audience Profile import (139) | ✅ | journey-facilitator/audience-profile-import.md |
+| Segment Manager (140) | ✅ | journey-facilitator/segment-manager.md |
+| Campaigns (141) | ✅ | journey-facilitator/campaigns.md |
+| Basics of Journey Builder (142) | ✅ | journey-facilitator/journey-builder-basics.md |
+| Different nodes in a Journey Builder (143) | ✅ | journey-facilitator/journey-nodes.md |
+| Channels Supported (144) | ✅ | journey-facilitator/channels-supported.md |
+| Journey Reporting (145) | ✅ | journey-facilitator/journey-reporting.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **Inbound Voice**
-- **Journey Facilitator**
 - **Messaging**
 - **Quality Management**
 - **Reporting**
