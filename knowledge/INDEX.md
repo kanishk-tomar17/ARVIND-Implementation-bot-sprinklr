@@ -240,9 +240,17 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Apple Messages for Business Supported Templates (059) | ✅ | messaging/apple-messages-templates.md |
 | Google Business Messaging Supported Templates (060) | ✅ | messaging/google-business-messaging-templates.md |
 
+## Quality Management (folder: `Quality Management`; topics 175–179; 5)
+| Topic | Status | KB file |
+|---|---|---|
+| Quality Monitoring / Audit Checklist (175) | ✅ | quality-management/audit-checklist.md |
+| AI Scoring / Automated QM (176) | ✅ | quality-management/ai-scoring.md |
+| Agent Appeals Process (177) | ✅ | quality-management/agent-appeals-process.md |
+| Calibration (178) | ✅ | quality-management/calibration.md |
+| Case Sampling via Rule Engine (179) | ✅ | quality-management/case-sampling-rule-engine.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **Quality Management**
 - **Reporting**
 - **Supervisor Console**
 - Top-level `01_Process Foundation.mp4` (CCaaS Voice overview) — still ⬜.
