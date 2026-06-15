@@ -181,9 +181,19 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Support Ticket / Support Cases (189) | ✅ | community/support-ticket.md |
 | Community Reporting (190) | ✅ | community/community-reporting.md |
 
+## Email Care (folder: `Email Care`; topics 132–138; 7 — topic folders may hold multiple `_videoN.mp4` parts)
+| Topic | Status | KB file |
+|---|---|---|
+| Account types and addition process (132, 3 parts) | ✅ | email-care/account-types.md |
+| Webforms — External Guided Workflows (133) | ✅ | email-care/webforms-external-gw.md |
+| Email signature setup (134) | ✅ | email-care/email-signature.md |
+| Email collaboration — Forward as email (135) | ✅ | email-care/email-collaboration.md |
+| Manual case creation + Merge case setup (136) | ✅ | email-care/manual-case-merge.md |
+| Ignore duplicate & auto-response emails (137) | ✅ | email-care/ignore-duplicate-autoresponse.md |
+| Email templates (HTML) (138) | ✅ | email-care/email-templates.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
-Each holds numbered `NNN_<Module> - <topic>` item folders; enumerate when reached:
-- **Email Care**
+Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
 - **IVR**
 - **Inbound Voice**
 - **Journey Facilitator**
