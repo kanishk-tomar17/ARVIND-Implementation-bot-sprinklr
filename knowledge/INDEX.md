@@ -128,18 +128,18 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Application Lifecycle Management and best practices (195) | 🟡 transcript stuck | sandbox/alm-best-practices.md (195 transcript hung server-side; re-generate next pass) |
 
 ## Knowledge Base (folders `Knowledge Base - <topic>`; 8 topics — **NO VIDEOS**)
-> **Source caveat (confirmed 2026-06-15):** KB topics have **no course video** — each numbered subfolder is empty. Content lives in **"KB Microskills - <topic>.pdf"** slide decks (read via M365 search → read_resource). Only **Enablement** has substantial extractable text; **Change Management** is sparse; the rest (**Users, Tiered Approvals, Community Builder, Integration, Reporting**) extract only image glyphs — they need `sprinklr.com/help` or the live platform.
+> **Source (confirmed 2026-06-15):** KB topics have **no course video** — numbered subfolders are empty. Content lives in **"KB Microskills - <topic>.pdf"** slide decks. Text-extraction returns only glyphs, but **downloading the PDF + reading it visually** (SharePoint `download.aspx?SourceUrl=…` → local Read) renders the slides as images and works. **7/8 distilled this way.** These are overview decks (concepts + a touchpoint diagram), not deep config — in-platform demos aren't in the slides; flag config specifics for `sprinklr.com/help` / live.
 
 | Topic | Status | KB file |
 |---|---|---|
 | Enablement of Knowledge Base (124) | ✅ (PDF) | knowledge-base/enablement.md |
-| Users, User Groups, Permissions, Personas, Roles (122) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/users-permissions.md |
-| Tiered Approval Workflow (123) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/tiered-approval.md |
-| Community Builder (mapping, article ordering, etc.) (125) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/community-builder.md |
-| Knowledge Base Builder Features (autotranslate, tags, editing, scheduled publish) (126) | ⬜ no PDF found — needs help.sprinklr / live | knowledge-base/builder-features.md |
-| Integration (Smart Assist, Smart Comprehend, Sprinklr AI+, Bot) (128) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/integration.md |
-| Knowledge Base Reporting (dashboard import, visualisations) (130) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/reporting.md |
-| Change Management (Inbound/Outbound Changesets) (131) | 🟡 PDF sparse | knowledge-base/change-management.md |
+| Users, User Groups, Permissions, Personas, Roles (122) | ✅ (PDF) | knowledge-base/users-permissions.md |
+| Tiered Approval Workflow (123) | ✅ (PDF) | knowledge-base/tiered-approval.md |
+| Community Builder (mapping, article ordering, etc.) (125) | ✅ (PDF) | knowledge-base/community-builder.md |
+| Knowledge Base Builder Features (autotranslate, tags, editing, scheduled publish) (126) | ❌ **no source** — folder empty, no PDF/video; needs help.sprinklr / live | knowledge-base/builder-features.md |
+| Integration / Consumption & Touchpoints (Smart Assist, Smart Comprehend, AI+, Bot) (128) | ✅ (PDF) | knowledge-base/integration.md |
+| Knowledge Base Reporting (dashboard import, visualisations) (130) | ✅ (PDF) | knowledge-base/reporting.md |
+| Change Management (Inbound/Outbound Changesets) (131) | ✅ (PDF) | knowledge-base/change-management.md |
 
 ## Sprinklr Services (folder: `Sprinklr Services`; Case Management done elsewhere)
 | Topic | Status | KB file |
