@@ -155,13 +155,13 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Sprinklr Services — Rule Engine (folder `Sprinklr Services - Rule Engine`; 009–015, 7 videos)
 | Topic | Status | KB file |
 |---|---|---|
-| Inbound rules (009) | ⬜ | rule-engine/inbound-rules.md |
-| Rule Batches & Triggers (010) | ⬜ | rule-engine/batches-triggers.md |
-| Queue Rules (011) | ⬜ | rule-engine/queue-rules.md |
-| Case update and creation rules (012) | ⬜ | rule-engine/case-update-creation.md |
-| On demand rules (013) | ⬜ | rule-engine/on-demand-rules.md |
-| Scheduler Engine (014) | ⬜ | rule-engine/scheduler-engine.md |
-| LoginLogout rule (015) | ⬜ | rule-engine/login-logout-rule.md |
+| Inbound rules (009) | ✅ | rule-engine/inbound-rules.md |
+| Rule Batches & Triggers (010) | ✅ | rule-engine/batches-triggers.md |
+| Queue Rules (011) | ✅ | rule-engine/queue-rules.md |
+| Case update and creation rules (012) | ✅ | rule-engine/case-update-creation.md |
+| On demand rules (013) | ✅ | rule-engine/on-demand-rules.md |
+| Scheduler Engine (014) | ✅ | rule-engine/scheduler-engine.md |
+| LoginLogout rule (015) | ✅ | rule-engine/login-logout-rule.md |
 
 ## Sprinklr Services — Case Management (done elsewhere)
 | Case Management (016–021) | ✅ | case-management/*.md |
