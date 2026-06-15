@@ -200,7 +200,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | IVR transaction and its reporting (148) | ✅ | ivr/transaction-reporting.md |
 | API integration in IVR (149) | ✅ | ivr/api-integration.md |
 | System nodes in IVR (150) | ✅ | ivr/system-nodes.md |
-| PCI input in IVR (151) | 🟡 transcript generating | ivr/pci-input.md |
+| PCI input in IVR (151) | ✅ (slide; transcript pending) | ivr/pci-input.md |
 
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
