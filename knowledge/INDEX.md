@@ -141,12 +141,30 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Knowledge Base Reporting (dashboard import, visualisations) (130) | ✅ (PDF) | knowledge-base/reporting.md |
 | Change Management (Inbound/Outbound Changesets) (131) | ✅ (PDF) | knowledge-base/change-management.md |
 
-## Sprinklr Services (folder: `Sprinklr Services`; Case Management done elsewhere)
+## Sprinklr Services — Governance (folder `Sprinklr Services - Governance`; 002–008, 7 videos)
 | Topic | Status | KB file |
 |---|---|---|
-| Case Management (016–021) | ✅ | case-management/*.md (done — see Case Management section) |
-| Governance | ⬜ | sprinklr-services/governance.md |
-| Rule Engine | ⬜ | sprinklr-services/rule-engine.md |
+| User and User Groups basics (002) | ✅ | governance/users-user-groups.md |
+| Roles and permissions (003) | ✅ | governance/roles-permissions.md |
+| Accounts & Account Groups (004) | ✅ | governance/accounts-account-groups.md |
+| Customer vs Workspace (005) | ✅ | governance/customer-vs-workspace.md |
+| Custom Fields (006) | ✅ | governance/custom-fields.md |
+| Understanding Macros (007) | ✅ | governance/macros.md |
+| Understanding Queues (008) | ✅ | governance/queues.md |
+
+## Sprinklr Services — Rule Engine (folder `Sprinklr Services - Rule Engine`; 009–015, 7 videos)
+| Topic | Status | KB file |
+|---|---|---|
+| Inbound rules (009) | ⬜ | rule-engine/inbound-rules.md |
+| Rule Batches & Triggers (010) | ⬜ | rule-engine/batches-triggers.md |
+| Queue Rules (011) | ⬜ | rule-engine/queue-rules.md |
+| Case update and creation rules (012) | ⬜ | rule-engine/case-update-creation.md |
+| On demand rules (013) | ⬜ | rule-engine/on-demand-rules.md |
+| Scheduler Engine (014) | ⬜ | rule-engine/scheduler-engine.md |
+| LoginLogout rule (015) | ⬜ | rule-engine/login-logout-rule.md |
+
+## Sprinklr Services — Case Management (done elsewhere)
+| Case Management (016–021) | ✅ | case-management/*.md |
 
 ## Other module folders — not yet enumerated (single-word folders)
 Each likely holds numbered `NNN_<Module> - <topic>` item folders; enumerate when reached:
