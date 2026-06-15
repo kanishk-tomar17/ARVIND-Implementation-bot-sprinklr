@@ -121,22 +121,25 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Sandbox / ALM (hyphenated folders `Sandbox - <topic>`; 5)
 | Topic | Status | KB file |
 |---|---|---|
-| Sandbox Features | ⬜ | sandbox/features.md |
-| Sandbox Refresh | ⬜ | sandbox/refresh.md |
-| Inbound Change sets | ⬜ | sandbox/inbound-changesets.md |
-| Outbound Change sets | ⬜ | sandbox/outbound-changesets.md |
-| Application Lifecycle Management and best practices | ⬜ | sandbox/alm-best-practices.md |
+| Sandbox Features (191) | ✅ | sandbox/features.md |
+| Sandbox Refresh (192) | ✅ | sandbox/refresh.md |
+| Inbound Change sets (193) | 🟡 transcript stuck | sandbox/inbound-changesets.md (193 transcript hung server-side; re-generate next pass) |
+| Outbound Change sets (194) | ✅ | sandbox/outbound-changesets.md |
+| Application Lifecycle Management and best practices (195) | 🟡 transcript stuck | sandbox/alm-best-practices.md (195 transcript hung server-side; re-generate next pass) |
 
-## Knowledge Base (hyphenated folders `Knowledge Base - <topic>`; 7)
+## Knowledge Base (folders `Knowledge Base - <topic>`; 8 topics — **NO VIDEOS**)
+> **Source caveat (confirmed 2026-06-15):** KB topics have **no course video** — each numbered subfolder is empty. Content lives in **"KB Microskills - <topic>.pdf"** slide decks (read via M365 search → read_resource). Only **Enablement** has substantial extractable text; **Change Management** is sparse; the rest (**Users, Tiered Approvals, Community Builder, Integration, Reporting**) extract only image glyphs — they need `sprinklr.com/help` or the live platform.
+
 | Topic | Status | KB file |
 |---|---|---|
-| Enablement of Knowledge Base | ⬜ | knowledge-base/enablement.md |
-| Users, User Groups, Permissions, Personas, Roles | ⬜ | knowledge-base/users-permissions.md |
-| Tiered Approval Workflow | ⬜ | knowledge-base/tiered-approval.md |
-| Community Builder (mapping, article ordering, etc.) | ⬜ | knowledge-base/community-builder.md |
-| Integration (Smart Assist, Smart Comprehend, Sprinklr AI+, Bot) | ⬜ | knowledge-base/integration.md |
-| Change Management (Inbound/Outbound Changesets) | ⬜ | knowledge-base/change-management.md |
-| Knowledge Base Reporting (dashboard import, visualisations) | ⬜ | knowledge-base/reporting.md |
+| Enablement of Knowledge Base (124) | ✅ (PDF) | knowledge-base/enablement.md |
+| Users, User Groups, Permissions, Personas, Roles (122) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/users-permissions.md |
+| Tiered Approval Workflow (123) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/tiered-approval.md |
+| Community Builder (mapping, article ordering, etc.) (125) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/community-builder.md |
+| Knowledge Base Builder Features (autotranslate, tags, editing, scheduled publish) (126) | ⬜ no PDF found — needs help.sprinklr / live | knowledge-base/builder-features.md |
+| Integration (Smart Assist, Smart Comprehend, Sprinklr AI+, Bot) (128) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/integration.md |
+| Knowledge Base Reporting (dashboard import, visualisations) (130) | ⬜ PDF image-only — needs help.sprinklr / live | knowledge-base/reporting.md |
+| Change Management (Inbound/Outbound Changesets) (131) | 🟡 PDF sparse | knowledge-base/change-management.md |
 
 ## Sprinklr Services (folder: `Sprinklr Services`; Case Management done elsewhere)
 | Topic | Status | KB file |
