@@ -123,9 +123,9 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 |---|---|---|
 | Sandbox Features (191) | ✅ | sandbox/features.md |
 | Sandbox Refresh (192) | ✅ | sandbox/refresh.md |
-| Inbound Change sets (193) | 🟡 transcript stuck | sandbox/inbound-changesets.md (193 transcript hung server-side; re-generate next pass) |
+| Inbound Change sets (193) | ✅ | sandbox/inbound-changesets.md |
 | Outbound Change sets (194) | ✅ | sandbox/outbound-changesets.md |
-| Application Lifecycle Management and best practices (195) | 🟡 transcript stuck | sandbox/alm-best-practices.md (195 transcript hung server-side; re-generate next pass) |
+| Application Lifecycle Management and best practices (195) | ✅ | sandbox/alm-best-practices.md |
 
 ## Knowledge Base (folders `Knowledge Base - <topic>`; 8 topics — **NO VIDEOS**)
 > **Source (confirmed 2026-06-15):** KB topics have **no course video** — numbered subfolders are empty. Content lives in **"KB Microskills - <topic>.pdf"** slide decks. Text-extraction returns only glyphs, but **downloading the PDF + reading it visually** (SharePoint `download.aspx?SourceUrl=…` → local Read) renders the slides as images and works. **7/8 distilled this way.** These are overview decks (concepts + a touchpoint diagram), not deep config — in-platform demos aren't in the slides; flag config specifics for `sprinklr.com/help` / live.
