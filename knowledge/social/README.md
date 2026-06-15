@@ -37,4 +37,9 @@ Social analytics dashboards, exports, alerts, SLA, the data engine, and the metr
 - `advanced-value-realization.md` — owned/inbound channel value realization, click insights, estimated clicks, smart insights, summaries, Empower.
 - `advanced-dashboard-tools.md` — date ranges, section filtering, side-by-side compare, tooltips, widget warnings, audit activity, historical data, Google Data Studio.
 
-### (pending) channels, advocacy, distributed, asset-manager, rule-engine, settings
+### channels/ 🔄 (in progress — Facebook done)
+Per-channel setup, publishing, engagement, and reporting. Distilled from both article text **and** the in-article screenshots (exact UI labels/menus/fields).
+- `facebook/` ✅ — overview, add-accounts, manage-accounts, publishing, publishing-advanced, engagement-columns, engagement-reply, reporting-dashboards, reporting-glossary (75 articles, 55 screenshots viewed).
+- (pending) instagram (67), x-twitter (43), youtube (23), linkedin (22), tiktok (14), + long-tail channels (WhatsApp/LINE/WeChat/Reddit/Pinterest/TikTok/Threads/BlueSky/review sites/messaging apps, etc.).
+
+### (pending) advocacy, distributed, asset-manager, rule-engine, settings, link-in-bio, content-variants
