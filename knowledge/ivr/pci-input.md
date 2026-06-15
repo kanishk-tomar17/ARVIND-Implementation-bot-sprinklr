@@ -1,22 +1,27 @@
 # PCI Input in IVR (IVR 151)
-**Source:** Product Foundation Courses → IVR / 151 PCI input in IVR (architecture **slide captured via screenshot**; Stream transcript not yet generated) · **Help:** search `site:sprinklr.com/help PCI IVR CDE DTMF`
+**Source:** Product Foundation Courses → IVR / 151 PCI input in IVR (video transcript + "Gather Customer's Response" node screenshot showing Sensitive Data → PCI option) · **Help:** search `site:sprinklr.com/help PCI input IVR gather customer response sensitive data CDE`
 
 ## What it is
-Securely collecting **PCI-sensitive data** (e.g. card details) from a customer **in the IVR**, so the sensitive data **never touches Sprinklr's normal system** — it goes to an isolated **CDE** (Cardholder Data Environment). **All data in motion is over TLS 1.2 with AES-256 encryption.**
+How to capture **PCI / sensitive data** (e.g. card number) from the customer in an IVR without storing it in normal Sprinklr databases — it goes to an isolated **CDE** (Cardholder Data Environment).
 
-## High-level PCI architecture (Scenario 1 — customer connected through IVR, IVR taking PCI data)
-Components: **Customer → Telephony provider → Sprinklr's System (Process Engine) → Sprinklr PCI Environment (CDE, with Redis Cache).**
+## What is PCI data
+**PCI DSS** = a set of security standards from Visa, MasterCard & global financial leaders (governed by the **PCI SSC**) for handling sensitive data. A vendor/brand storing such data must be **PCI DSS certified** — requires restricted access, antivirus, strong **encryption** (transmission + retention), firewalls.
+- **Examples:** complete card number, expiry, CVV, card PIN, OTP. (Brands may classify other sensitive customer data as PCI too.)
+- **Requirements:** never stored on normal servers; encrypted at rest + in transit; retained only in cache; access restricted to PCI-DSS-trained people.
 
-Numbered flow:
-1. **Customer calls** the number and connects to the **telephony provider**.
-2. Telephony provider **patches the call to Sprinklr IVR**.
-3. When **PCI data is required**, the **Sprinklr process engine sends an instruction** to the telephony provider to collect the information — **along with the webhook of the CDE** — so the telephony provider can send that data **directly to the CDE** (bypassing Sprinklr's normal system).
-4. **Customer enters the PCI-sensitive data via DTMF** (Dual-Tone Multi-Frequency keypad input).
-5. Telephony provider **sends the PCI data over an encrypted transport (TLS 1.2, AES-256)** and submits it to the **Sprinklr PCI Environment (CDE)**; the CDE **retains the data in memory, in the Redis cache**.
+## How Sprinklr solves it (data flow)
+1. Customer calls the brand → telephony provider connects to the normal Sprinklr environment (process engine, IVR, guided workflow).
+2. When PCI data is needed, the **process engine / IVR instructs the telephony provider** to take the input (e.g. a 14-digit card number), flagged as **sensitive** — **do NOT send it back** to Sprinklr; instead send it to the special **CDE** provisioned to retain such data.
+3. Telephony provider securely transmits the data with **AES-256 encryption** to the secure **PCI environment (CDE)**.
+4. The CDE returns an **ID** (identifier) for that data → passed back to the process engine.
+5. The **normal environment only ever holds the identifier**, never the sensitive data. In the CDE the data is **encrypted** and **auto-discarded after a defined time** (held in a **Redis cache**).
 
-## Why it matters
-PCI compliance requires sensitive cardholder data to be isolated. Routing it **direct telephony-provider → CDE** (never through the main Sprinklr platform) plus **TLS1.2/AES-256** + **in-memory Redis** storage keeps the brand PCI-compliant while still capturing the input mid-call.
+## Configuration steps (demo)
+1. In the IVR flow, at the point you need PCI data, add a **Gather Customer's Response** node.
+2. Set **Name**, **Number of Input Digits** (e.g. **14** for a card number), **Process Variable** (stores the returned identifier), and the prompt text (language tabs: English/Dutch/German/Finnish/French).
+3. Tick the **Sensitive Data** checkbox → choose the **PCI data** radio option (or **PII data**). Also configurable: wait for end of prompt, end key, number of times to play the message.
+4. **Save.** That input then automatically routes to the **CDE** — provided the **PCI environment is enabled** for the partner (**contact Support** to enable PCI for a partner).
 
 ## Notes / gaps
-- **Written from the architecture slide (screenshot); the Stream transcript for 151 had not finished generating** — re-scrape to enrich step detail / any second scenario (the slide was labelled "Scenario 1", implying more scenarios in the video).
-- Uses IVR DTMF input ([[communication-nodes]] gather response) routed to the CDE. Part of IVR: [[communication-nodes]], [[disconnect-journey]], [[transaction-reporting]], [[api-integration]], [[system-nodes]].
+- Built on the **Gather Customer's Response** node ([[communication-nodes]]); customer enters data via DTMF keypad. IVR runs through the process/guided-workflow engine; PCI/sensitive flows reported via [[inbound-voice-ivr]].
+- Part of IVR: [[communication-nodes]], [[disconnect-journey]], [[transaction-reporting]], [[api-integration]], [[system-nodes]].

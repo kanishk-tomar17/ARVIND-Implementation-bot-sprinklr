@@ -291,9 +291,12 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Persona Builder (050) | ✅ | supervisor-console/persona-builder.md |
 
 ## Loose ends
-- Top-level `01_Process Foundation.mp4` (CCaaS overview) — transcript generating; KB pending → `process-foundation.md`.
-- **IVR 151 PCI input** — transcript now exists; re-scrape to enrich `ivr/pci-input.md` (currently slide-only).
-- **KB 126 Builder Features** — ❌ NO local source (empty folder, no PDF/video); needs sprinklr.com/help or live.
+- Top-level `01_Process Foundation.mp4` (CCaaS implementation lifecycle + docs) — ✅ `process-foundation.md`.
+- **IVR 151 PCI input** — ✅ re-scraped from full transcript + Gather Customer's Response demo (`ivr/pci-input.md` enriched).
+- **KB 126 Builder Features** — ❌ NO local source (empty folder, no PDF/video); needs sprinklr.com/help or live. ONLY remaining unsourceable item.
+
+## INGESTION COMPLETE (2026-06-15)
+Every Product Foundation Course module has been ingested from Stream transcripts with transcript-aligned screenshots, distilled to KB files, and committed/pushed to branch `knowledge-ingestion-2026-06`. Sole gap: KB 126 (no local source).
 
 ---
 
