@@ -202,6 +202,20 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | System nodes in IVR (150) | ✅ | ivr/system-nodes.md |
 | PCI input in IVR (151) | ✅ (slide; transcript pending) | ivr/pci-input.md |
 
+## Inbound Voice (folder: `Inbound Voice`; topics 153–162; 10)
+| Topic | Status | KB file |
+|---|---|---|
+| Telephony Integration (153) | ✅ | inbound-voice/telephony-integration.md |
+| Voice connectivity (154) | ✅ | inbound-voice/voice-connectivity.md |
+| Custom fields (155) | ✅ | inbound-voice/custom-fields.md |
+| IVR (156) | ✅ | inbound-voice/ivr.md |
+| Persona (157) | ✅ | inbound-voice/persona.md |
+| Care console (158) | ✅ | inbound-voice/care-console.md |
+| Guided Workflows (159) | ✅ | inbound-voice/guided-workflows.md |
+| Call controls (160) | ✅ | inbound-voice/call-controls.md |
+| Disposition plan (161) | ✅ | inbound-voice/disposition-plan.md |
+| ACW builder (162) | ✅ | inbound-voice/acw-builder.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
 - **Inbound Voice**
