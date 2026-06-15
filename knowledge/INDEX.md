@@ -5,6 +5,8 @@ The master map of what GROOT knows locally. **Check here first** before live sou
 - **Status** `✅` = distilled KB file exists; `🟡` = transcript generated in Stream, KB not yet written; `⬜` = not started.
 - **Lookup order:** this KB → `sprinklr.com/help` (`site:sprinklr.com/help <topic>`) → RaptorCX SharePoint videos.
 
+> **Help-center enrichment in progress (2026-06-15, branch `help-enrichment-2026-06`):** distilling the WHOLE Sprinklr help center (Service/Social/Marketing/Insights/AI/Platform) into the KB via the cracked GraphQL API + Workflow distillation. Tracking/method in `knowledge/_help-catalog/`. New areas land as new top-level folders. **Done so far:** `ai-studio/` (Sprinklr AI — 16 articles).
+
 ## How the source library is structured (confirmed June 2026)
 RaptorCX SharePoint → `Training Material/Sprinklr Trainings/Product Foundation Courses/`. **Reorganized into ~60 per-topic folders.** Each topic folder = a numbered subfolder `NNN_<Topic>` holding the **course video (.mp4)** + a **slide PDF** (`Presentation2*.pdf`). Videos are Microsoft Stream screen-recordings.
 
