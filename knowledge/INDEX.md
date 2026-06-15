@@ -136,7 +136,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Users, User Groups, Permissions, Personas, Roles (122) | ✅ (PDF) | knowledge-base/users-permissions.md |
 | Tiered Approval Workflow (123) | ✅ (PDF) | knowledge-base/tiered-approval.md |
 | Community Builder (mapping, article ordering, etc.) (125) | ✅ (PDF) | knowledge-base/community-builder.md |
-| Knowledge Base Builder Features (autotranslate, tags, editing, scheduled publish) (126) | ❌ **no source** — folder empty, no PDF/video; needs help.sprinklr / live | knowledge-base/builder-features.md |
+| Knowledge Base Builder Features (126) | ✅ (from sprinklr.com/help — no local video) | knowledge-base/builder-features.md |
 | Integration / Consumption & Touchpoints (Smart Assist, Smart Comprehend, AI+, Bot) (128) | ✅ (PDF) | knowledge-base/integration.md |
 | Knowledge Base Reporting (dashboard import, visualisations) (130) | ✅ (PDF) | knowledge-base/reporting.md |
 | Change Management (Inbound/Outbound Changesets) (131) | ✅ (PDF) | knowledge-base/change-management.md |
@@ -293,10 +293,10 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Loose ends
 - Top-level `01_Process Foundation.mp4` (CCaaS implementation lifecycle + docs) — ✅ `process-foundation.md`.
 - **IVR 151 PCI input** — ✅ re-scraped from full transcript + Gather Customer's Response demo (`ivr/pci-input.md` enriched).
-- **KB 126 Builder Features** — ❌ NO local source (empty folder, no PDF/video); needs sprinklr.com/help or live. ONLY remaining unsourceable item.
+- **KB 126 Builder Features** — ✅ written from **sprinklr.com/help** (no local video/PDF existed); re-ingest if a source video surfaces.
 
 ## INGESTION COMPLETE (2026-06-15)
-Every Product Foundation Course module has been ingested from Stream transcripts with transcript-aligned screenshots, distilled to KB files, and committed/pushed to branch `knowledge-ingestion-2026-06`. Sole gap: KB 126 (no local source).
+Every Product Foundation Course module has been ingested from Stream transcripts with transcript-aligned screenshots, distilled to KB files, and committed/pushed to branch `knowledge-ingestion-2026-06`. The one topic without a local source (KB 126 Builder Features) was filled from sprinklr.com/help. **No gaps remaining.**
 
 ---
 
