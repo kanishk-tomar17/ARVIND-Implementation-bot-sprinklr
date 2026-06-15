@@ -192,9 +192,18 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Ignore duplicate & auto-response emails (137) | ✅ | email-care/ignore-duplicate-autoresponse.md |
 | Email templates (HTML) (138) | ✅ | email-care/email-templates.md |
 
+## IVR (folder: `IVR`; topics 146–151; 6)
+| Topic | Status | KB file |
+|---|---|---|
+| IVR communication nodes (146) | ✅ | ivr/communication-nodes.md |
+| IVR disconnect journey (147) | ✅ | ivr/disconnect-journey.md |
+| IVR transaction and its reporting (148) | ✅ | ivr/transaction-reporting.md |
+| API integration in IVR (149) | ✅ | ivr/api-integration.md |
+| System nodes in IVR (150) | ✅ | ivr/system-nodes.md |
+| PCI input in IVR (151) | 🟡 transcript generating | ivr/pci-input.md |
+
 ## Other module folders — not yet enumerated (single-word folders)
 Each holds numbered `NNN_<Module> - <topic>` item folders (may be multi-part `_videoN.mp4`); enumerate when reached:
-- **IVR**
 - **Inbound Voice**
 - **Journey Facilitator**
 - **Messaging**
