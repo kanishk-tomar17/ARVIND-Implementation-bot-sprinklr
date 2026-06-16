@@ -33,4 +33,4 @@ All three features are **Enabled on Request** — the org must have them activat
 - Article is high-level (overview only) — it names the features, their locations, and that each is Enabled on Request, but does not give detailed field-by-field setup. Treat the step locations above as navigation pointers, not full build guides; confirm exact fields live in the platform.
 - Every feature requires org-level activation (Enabled on Request) before it is visible.
 - Agent Copilot visibility depends on **record page access** permissions at the Care Console manager level.
-- Related GROOT topics: [[care-console]], [[automated-qm]], [[ai-studio]], [[service-analytics]], [[intents]], [[custom-fields]].
+- Related ARVIND topics: [[care-console]], [[automated-qm]], [[ai-studio]], [[service-analytics]], [[intents]], [[custom-fields]].

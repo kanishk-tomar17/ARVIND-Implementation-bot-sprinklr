@@ -48,4 +48,4 @@ This article is a feature/enablement matrix, not a step-by-step setup guide. Per
 - Access controls are permission names you must grant on the relevant role (e.g. Conversational AI, Outbound Execution, All & View, View & Edit) before agents see the feature.
 - Only **AI Autofill** uses AI+ Studio; the rest are configured in standard Service/Persona settings.
 - Built on a secure, compliant framework; key benefits cited: real-time insights, faster resolutions, consistent brand voice, automated content generation, smart routing, predictive analytics.
-- Related GROOT topics: [[intents]], [[entity-detection]], [[care-console]], [[predictive-csat]], [[voice-bot]], [[ivr]], [[ai-studio]], [[rule-engine]], [[persona-app]].
+- Related ARVIND topics: [[intents]], [[entity-detection]], [[care-console]], [[predictive-csat]], [[voice-bot]], [[ivr]], [[ai-studio]], [[rule-engine]], [[persona-app]].

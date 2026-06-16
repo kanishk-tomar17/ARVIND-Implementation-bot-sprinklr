@@ -81,7 +81,7 @@ Three categories of data source:
 - The Create/Remove Columns article does **not** specify formula syntax, exact field-naming conventions, supported expressions, or operational limits beyond the data-type list.
 - The Joins article does **not** give step-by-step click paths, key field names, or limits for configuring each join type.
 - Exact refresh-frequency options for File/Sprinklr/Generic sources are not enumerated in the source articles.
-- Related GROOT topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[care-console]].
+- Related ARVIND topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[care-console]].
 
 ## Sources
 - About the Data Engine — https://www.sprinklr.com/help/articles/data-flow/about-the-data-engine/63f84bfc9b334f7283b4dc8d

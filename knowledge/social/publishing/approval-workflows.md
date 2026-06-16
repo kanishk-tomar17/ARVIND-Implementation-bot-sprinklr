@@ -63,7 +63,7 @@ What happens once a post is approved depends on its scheduled time:
 - **Success Manager dependency:** the Pending Reschedule scenario requires backend configuration via Sprinklr's Success Manager.
 - The body content of three source articles did not render for capture: **Approve/Reject posts**, **About Parallel Approvals**, and **Create a tiered approval**. Their step-by-step UI details (exact button names, navigation path to build a tiered/parallel path, number of tiers, approver-selection fields, and any limits) were therefore not captured here — consult those URLs directly before configuring.
 - The "About tiered approvals" article does not specify tier levels, configuration fields, conditional logic, or technical limits; it points to the "Create a tiered approval" article for setup.
-- Related GROOT topics: [[approval-workflows]], [[rule-engine]], [[editorial-calendar]], [[ai-in-publishing]], [[asset-manager]], [[web-analytics]].
+- Related ARVIND topics: [[approval-workflows]], [[rule-engine]], [[editorial-calendar]], [[ai-in-publishing]], [[asset-manager]], [[web-analytics]].
 
 ## Sources
 - How to set the Approval Workflows while publishing — https://www.sprinklr.com/help/articles/approval-workflows/how-to-set-the-approval-workflows-while-publishing/6454897b0d27fc559bbeb45e

@@ -29,4 +29,4 @@ The article is an overview only — it does not document step-by-step setup. It 
 - This KB article is thin: it lists capabilities but gives no prerequisites, no field-level detail, no ordered setup steps, and no stated limitations. For actual configuration, drill into each sub-area's own help article.
 - Feature Access Management is admin-gated — managing availability and user access requires admin permissions.
 - Guardrails and PII masking attach at the prompt-node level, so they apply per AI use case rather than globally.
-- Related GROOT topics: [[intents]], [[faq-bots]], [[bot-rule-setup]], [[custom-fields]], [[rule-engine]]
+- Related ARVIND topics: [[intents]], [[faq-bots]], [[bot-rule-setup]], [[custom-fields]], [[rule-engine]]

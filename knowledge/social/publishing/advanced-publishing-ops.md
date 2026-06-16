@@ -5,7 +5,7 @@
 - Advanced publishing controls that sit on top of the core Publisher (Quick Publisher / Advanced Publisher) to improve accuracy, compliance, and reliability of posts.
 - Covers content optimisation (A/B testing, content placeholders, spelling/grammar, custom dictionary), link handling (URL shortening, invalid-link detection, TRAI SMS compliance), special post types (organic dark posts, broadcast announcements), account hygiene in the publisher (deactivated/disabled accounts, Facebook DM account locking), and reliable scheduling (media pre-upload).
 - Reference for consultants configuring client environments — many features are gated by a **Dynamic Property** that a Success Manager / tickets@sprinklr.com must enable.
-- Related GROOT topics: [[ai-in-publishing]], [[editorial-calendar]], [[approval-workflows]], [[rule-engine]], [[asset-manager]], [[web-analytics]].
+- Related ARVIND topics: [[ai-in-publishing]], [[editorial-calendar]], [[approval-workflows]], [[rule-engine]], [[asset-manager]], [[web-analytics]].
 
 ## Key features & how to use
 

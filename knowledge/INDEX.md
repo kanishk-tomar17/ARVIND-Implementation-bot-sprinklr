@@ -1,18 +1,18 @@
-# GROOT Knowledge Base — Index
+# ARVIND Knowledge Base — Index
 
-The master map of what GROOT knows locally. **Check here first** before live sources.
+The master map of what ARVIND knows locally. **Check here first** before live sources.
 
 - **Status** `✅` = distilled KB file exists; `🟡` = transcript generated in Stream, KB not yet written; `⬜` = not started.
 - **Lookup order:** this KB → **`sprinklr-map.json` catalog → JIT WebFetch** → `site:sprinklr.com/help` search → RaptorCX SharePoint videos. Run the **`knowledge-lookup`** skill when unsure the local KB covers a fact.
 
-> **Just-In-Time retrieval (since 2026-06-17):** GROOT no longer bulk-ingests the help center. `knowledge/sprinklr-map.json` is a catalog of **every** help article (one JSON object per line: topic/category/url/keywords/local_kb) — Grep it to find the 1–2 articles a task needs, then WebFetch only those. Regenerate with `knowledge/_help-catalog/build_map.py`. The distilled folders below are the fast "already known" tier; everything else is reached on demand and distilled into the KB as it's used. See the `knowledge-lookup` skill.
+> **Just-In-Time retrieval (since 2026-06-17):** ARVIND no longer bulk-ingests the help center. `knowledge/sprinklr-map.json` is a catalog of **every** help article (one JSON object per line: topic/category/url/keywords/local_kb) — Grep it to find the 1–2 articles a task needs, then WebFetch only those. Regenerate with `knowledge/_help-catalog/build_map.py`. The distilled folders below are the fast "already known" tier; everything else is reached on demand and distilled into the KB as it's used. See the `knowledge-lookup` skill.
 >
 > **Distilled from the help center so far:** `ai-studio/` (Sprinklr AI, 16) · `social/publishing` (9) · `social/engagement` (4) · `social/reporting` (9) · `social/channels/` big-6 (facebook, instagram, x-twitter, youtube, linkedin, tiktok) + 14 long-tail channels. Everything else (rest of Service/Marketing/Insights/Platform + remaining channels) → JIT via the map.
 
 ## How the source library is structured (confirmed June 2026)
 RaptorCX SharePoint → `Training Material/Sprinklr Trainings/Product Foundation Courses/`. **Reorganized into ~60 per-topic folders.** Each topic folder = a numbered subfolder `NNN_<Topic>` holding the **course video (.mp4)** + a **slide PDF** (`Presentation2*.pdf`). Videos are Microsoft Stream screen-recordings.
 
-**Videos have no captions by default**, but GROOT (Kanishk's account has edit access) **generates transcripts in Stream itself**, then reads them. Full procedure stored in auto-memory `groot-build-state`. This is the real content source — far richer than the slide PDFs. `sprinklr.com/help` cross-checks config specifics.
+**Videos have no captions by default**, but ARVIND (Kanishk's account has edit access) **generates transcripts in Stream itself**, then reads them. Full procedure stored in auto-memory `groot-build-state`. This is the real content source — far richer than the slide PDFs. `sprinklr.com/help` cross-checks config specifics.
 
 Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process overview (Stages 1–6: S2S kickoff → Discovery/BRW → ACD/Care Console/governance → Voice/IVR → ACW/Reports → Outbound → UAT/Go-live → Empower → Closure).
 

@@ -32,4 +32,4 @@ Feature reference:
 - **Not available in AI+ Studio** for either feature — these are surfaced in Publishing and Reporting, not the AI+ Studio module.
 - Both are **Enabled on Request** — not on by default; expect a partner/CSM request step.
 - Specific permission levels for RBAC are not detailed in the article; confirm per-role access in the environment.
-- Related GROOT topics: [[ai-plus-studio]], [[publishing-calendar]], [[social-reporting]], [[dashboards]], [[rbac]], [[custom-fields]].
+- Related ARVIND topics: [[ai-plus-studio]], [[publishing-calendar]], [[social-reporting]], [[dashboards]], [[rbac]], [[custom-fields]].

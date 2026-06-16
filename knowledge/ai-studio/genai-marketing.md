@@ -55,4 +55,4 @@ General steps:
 - Nearly all features support **Feature Access Management + RBAC** in AI+ Studio; the article notes a limited set fall outside Feature Access Management but does not enumerate them — verify per-feature in the client's AI+ Studio.
 - Watch the **Classic vs Modern editor** split for blogs, SMS, landing pages, and press releases — they are listed as separate use cases and may be gated independently.
 - Article is a capability catalog, not a step-by-step build guide — for actual screen-by-screen setup of a given generator, follow up in Advanced Publisher / Campaign Briefs / Ads UI.
-- Related GROOT topics: [[ai-studio]], [[feature-access-management]], [[rbac]], [[dynamic-properties]], [[advanced-publisher]], [[campaign-briefs]], [[smart-compliance]], [[message-localization]], [[ads-manager]], [[ai-configuration]]
+- Related ARVIND topics: [[ai-studio]], [[feature-access-management]], [[rbac]], [[dynamic-properties]], [[advanced-publisher]], [[campaign-briefs]], [[smart-compliance]], [[message-localization]], [[ads-manager]], [[ai-configuration]]

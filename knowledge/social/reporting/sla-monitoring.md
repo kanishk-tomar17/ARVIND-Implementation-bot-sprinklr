@@ -55,7 +55,7 @@
 - Prerequisite/permissions: articles state the SLA dashboard is on by default per partner but do **not** specify user roles/permissions required to create or edit presets.
 - Articles do **not** define exact metric formulas (e.g. how Average Response Time or compliance % is calculated), nor allowed value ranges/limits for SLA Objective, Compliance Target, or number of accounts/holiday dates per preset.
 - "Frequency Distribution Ranges" and "SLA Frequency" appear across articles but are not fully defined.
-- Related GROOT topics: [[sla-monitoring]], [[reporting]], [[engagement-dashboards]], [[care-console]], [[rule-engine]], [[data-engine]].
+- Related ARVIND topics: [[sla-monitoring]], [[reporting]], [[engagement-dashboards]], [[care-console]], [[rule-engine]], [[data-engine]].
 
 ## Sources
 - SLA Preset Configuration — https://www.sprinklr.com/help/articles/sla-monitoring/sla-preset-configuration/6454ec83f65d86626c82b9c7

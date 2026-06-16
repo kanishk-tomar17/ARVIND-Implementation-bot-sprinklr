@@ -30,4 +30,4 @@ Core capabilities the Copilot delivers (no per-feature config steps given in the
 - **Article is thin.** It is an overview/capability summary; it does not give detailed setup procedures, prerequisites, or operational limits beyond the Sprinklr Assist listing above. Do not invent steps — for hands-on enablement raise a request with Sprinklr and confirm against the live environment.
 - **Sprinklr Assist is enablement-on-request** — it is not self-serve; the partner must request activation.
 - **RBAC applies** — confirm the consultant's role grants access before troubleshooting "feature not visible" issues.
-- Related GROOT topics: [[rule-engine]], [[bot-rule-setup]], [[intents]], [[custom-fields]], [[faq-bots]].
+- Related ARVIND topics: [[rule-engine]], [[bot-rule-setup]], [[intents]], [[custom-fields]], [[faq-bots]].

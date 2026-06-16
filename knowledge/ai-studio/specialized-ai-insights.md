@@ -26,4 +26,4 @@ This article is a feature catalogue, not a setup walkthrough — it lists capabi
 - Article is thin on step-by-step config, prerequisites, and limits — it documents *what exists* and *default enablement*, not *how to turn each on*. Treat per-feature KB articles as the source for actual setup.
 - "Enabled by default, no RBAC" applies to the Benchmarking set; confirm in-environment before assuming a feature is live for the client.
 - Visual Insights features (age/gender/scene/activity detection) are inference-based — flag accuracy caveats to clients before relying on them for decisions.
-- Related GROOT topics: [[sentiment-detection]], [[emotion-analysis]], [[smart-theme-explorer]], [[entity-operator]], [[influencer-score]], [[intuition-moderation]], [[visual-insights]], [[benchmarking-dashboards]], [[social-listening]], [[custom-fields]].
+- Related ARVIND topics: [[sentiment-detection]], [[emotion-analysis]], [[smart-theme-explorer]], [[entity-operator]], [[influencer-score]], [[intuition-moderation]], [[visual-insights]], [[benchmarking-dashboards]], [[social-listening]], [[custom-fields]].

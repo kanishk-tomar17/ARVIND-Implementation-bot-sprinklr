@@ -54,7 +54,7 @@
 - Permissions: only the Work Week View prerequisite (Success Manager enablement) is named; no role/permission names are given for boards, Global vs Workspace calendars, or sharing.
 - The revamped-navigation article does not specify whether the old dropdown remains available or any rollout/availability conditions.
 - Exact menu paths beyond Work Week View (e.g. where View Options/Options icon sit for other settings) are not detailed in these articles.
-- Related GROOT topics worth cross-checking when configuring: [[asset-manager]] (media used in posts), [[rule-engine]] (automation around publishing), [[approval-workflows]], [[ai-in-publishing]].
+- Related ARVIND topics worth cross-checking when configuring: [[asset-manager]] (media used in posts), [[rule-engine]] (automation around publishing), [[approval-workflows]], [[ai-in-publishing]].
 
 ## Sources
 - What is an Editorial Calendar — https://www.sprinklr.com/help/articles/editorial-calendar/what-is-an-editorial-calendar/642ea48fc7dea832a77dcedd

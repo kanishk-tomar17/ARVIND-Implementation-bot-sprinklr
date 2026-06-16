@@ -31,4 +31,4 @@ Two Copilot surfaces are documented for Marketing. Both are **Enabled on Request
 - Both features require Sprinklr to enable them on request before they appear.
 - Both honour RBAC, so consultant/user permissions gate access.
 - Neither integrates with AI+ Studio per the article.
-- Related GROOT topics: [[ai-studio]], [[ads-manager]], [[ads-reporting]], [[rbac]], [[sentiment-analysis]]
+- Related ARVIND topics: [[ai-studio]], [[ads-manager]], [[ads-reporting]], [[rbac]], [[sentiment-analysis]]

@@ -1,6 +1,6 @@
 ---
 name: sprinklr-takeover
-description: Use when GROOT should stop guiding and directly operate the browser to inspect or fix a Sprinklr configuration — triggered after the consultant has 3–4 failed attempts at the same step, or whenever they ask GROOT to do it directly. Covers choosing the browser path, confirming safely, acting, and handing back.
+description: Use when ARVIND should stop guiding and directly operate the browser to inspect or fix a Sprinklr configuration — triggered after the consultant has 3–4 failed attempts at the same step, or whenever they ask ARVIND to do it directly. Covers choosing the browser path, confirming safely, acting, and handing back.
 ---
 
 # Sprinklr Takeover
@@ -9,7 +9,7 @@ When guidance isn't landing, take control and do it — safely.
 
 ## When to trigger
 - Consultant has **3–4 failed attempts** on the same step, OR
-- They explicitly ask GROOT to do it.
+- They explicitly ask ARVIND to do it.
 
 Announce the switch: "I'll take it from here — let me drive the browser." Don't take over silently.
 

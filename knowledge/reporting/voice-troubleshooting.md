@@ -19,5 +19,5 @@ These IDs (dashboard, widget, export config, scheduled export, pipeline) are wha
 The session also walks through the basic reporting problems that come up and how to debug/solutionise them (provide the relevant config IDs + describe the discrepancy).
 
 ## Notes / gaps
-- Closes the Reporting module. Applies across digital + voice dashboards built in [[creating-widget]] / [[export-schedule-export]]. When stuck, capture the config IDs above and raise a ticket per the GROOT escalation path.
+- Closes the Reporting module. Applies across digital + voice dashboards built in [[creating-widget]] / [[export-schedule-export]]. When stuck, capture the config IDs above and raise a ticket per the ARVIND escalation path.
 - Part of Reporting: ties to [[export-schedule-export]], [[organising-creating-dashboards]], and all voice/digital report files.

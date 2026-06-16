@@ -97,4 +97,4 @@
 - Permission to Control Account Re-Add Notification in Engagement Dashboard — https://www.sprinklr.com/help/articles/other-engagement-capabilities/permission-to-control-account-readd-notification-in-engagement-dashboard/64564d2fe66f2e36b4514d7d
 - Timed Logout and Multiple Secure Access — https://www.sprinklr.com/help/articles/other-engagement-capabilities/timed-logout-and-multiple-secure-access/64df6fa3d8ffbe0c80350c86
 
-Related GROOT topics: [[engagement-dashboards]], [[rule-engine]], [[reporting]], [[sla-monitoring]], [[data-engine]], [[care-console]]
+Related ARVIND topics: [[engagement-dashboards]], [[rule-engine]], [[reporting]], [[sla-monitoring]], [[data-engine]], [[care-console]]

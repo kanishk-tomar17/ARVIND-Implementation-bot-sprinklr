@@ -82,7 +82,7 @@
 - The "Set up Alerts on Anomalies for Posts or Account" article does **not** specify exact UI step labels, field names, threshold defaults/limits, or notification delivery methods for that specific flow — only the conceptual filter-by-dimension + threshold model.
 - Articles do not state numeric limits on total alerts per partner, or exact email send latency beyond "as soon as detected."
 - Anomaly history is capped at the last 24 hours from the current detection time.
-- Related GROOT topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[sla-monitoring]], [[care-console]].
+- Related ARVIND topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[sla-monitoring]], [[care-console]].
 
 ## Sources
 - Create Reporting Alerts — https://www.sprinklr.com/help/articles/alerts-in-reporting/create-reporting-alerts/6454deca0d27fc559bbeb52c

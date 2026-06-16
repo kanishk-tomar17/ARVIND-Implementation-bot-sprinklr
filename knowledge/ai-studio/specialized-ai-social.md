@@ -31,4 +31,4 @@ Enablement depends on the feature. Two patterns:
 - **Data Platform (DP) role** is the gating permission for the three DAM asset features (contextual search, duplicate detection, smart image tags).
 - Almost all features are **not** available in AI+ Studio; Thumbnail Generation is the exception.
 - "On Request" = needs Sprinklr-side enablement; "By Default" = already on.
-- Related GROOT topics: [[sentiment-analysis]], [[dam]], [[smart-image-tags]], [[intuition-moderation]], [[smart-approvals]], [[custom-fields]], [[rule-engine]].
+- Related ARVIND topics: [[sentiment-analysis]], [[dam]], [[smart-image-tags]], [[intuition-moderation]], [[smart-approvals]], [[custom-fields]], [[rule-engine]].

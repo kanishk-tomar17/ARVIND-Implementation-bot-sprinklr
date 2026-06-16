@@ -34,4 +34,4 @@ Where each feature lives:
 - Article is a feature/availability matrix, not a step-by-step setup guide — it lists *where* features appear and *how* they're gated, not detailed click paths. Detailed per-feature config steps are not in this article.
 - DP setup (e.g. `_LST_STORY_ENABLED_`) is not self-serve; route through Sprinklr Support.
 - The article does not specify granular user permissions beyond RBAC, dataset size limits, or performance caveats.
-- Related GROOT topics: [[custom-fields]], [[rule-engine]], [[intents]]
+- Related ARVIND topics: [[custom-fields]], [[rule-engine]], [[intents]]

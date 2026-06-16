@@ -119,7 +119,7 @@
 - **Custom translators:** the article does not document language-pair limits, cost, latency, or how custom-trained models are technically supplied beyond "contact your Success Manager."
 - **Request Source / Asset-Expiry articles** describe the condition and one example action each, not the full action catalog available on those branches.
 - Screenshots in the source articles are not reproduced here; field names are transcribed verbatim from the article text. Always verify exact labels against the live tenant, as UI labels drift between releases.
-- Related GROOT topics: [[rule-engine]], [[approval-workflows]], [[editorial-calendar]], [[ai-in-publishing]], [[asset-manager]], [[dynamic-properties]], [[web-analytics]].
+- Related ARVIND topics: [[rule-engine]], [[approval-workflows]], [[editorial-calendar]], [[ai-in-publishing]], [[asset-manager]], [[dynamic-properties]], [[web-analytics]].
 
 ## Sources
 - Request Source in Outbound Message Conditions — https://www.sprinklr.com/help/articles/automation-in-publishing/request-source-in-outbound-message-conditions/64548eff0d27fc559bbeb465

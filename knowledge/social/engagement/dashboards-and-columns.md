@@ -103,7 +103,7 @@
 - Workflow column article documents no explicit limits or permissions.
 - Export troubleshooting, file-size/row limits, and metric definitions for the persona app widgets (e.g. how response rate is calculated) are not specified in these articles.
 - "Status" (outbound) and exact difference between Approval Required vs Approval Sent are named but not fully defined in the source.
-- Related GROOT topics: [[engagement-dashboards]], [[rule-engine]], [[sla-monitoring]], [[reporting]], [[care-console]], [[data-engine]].
+- Related ARVIND topics: [[engagement-dashboards]], [[rule-engine]], [[sla-monitoring]], [[reporting]], [[care-console]], [[data-engine]].
 
 ## Sources
 - What can you do with Engagement Dashboards — https://www.sprinklr.com/help/articles/engagement-dashboard-fundamentals/what-can-you-do-with-engagement-dashboards/6450dc2fd85662201933c821

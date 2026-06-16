@@ -104,7 +104,7 @@
 - The articles do **not** specify exact role permissions required to view or build these widgets, nor exact API rate limits.
 - The Reporting Summary article lists per-platform sync latency, backfill and refresh values but only sample figures were captured here — consult the live article for the full per-metric table.
 - The common metrics/dimensions list is representative, not exhaustive; use the in-platform glossary search for the complete, current list.
-- Related GROOT topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[sla-monitoring]], [[care-console]], [[rule-engine]].
+- Related ARVIND topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[sla-monitoring]], [[care-console]], [[rule-engine]].
 
 ## Sources
 - About the Reporting Glossary — https://www.sprinklr.com/help/articles/reporting-glossary/about-the-reporting-glossary/63f87bade02459133724b104

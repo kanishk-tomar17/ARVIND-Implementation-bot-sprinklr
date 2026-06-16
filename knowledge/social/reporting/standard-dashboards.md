@@ -7,7 +7,7 @@
 - Cross-channel dashboards: Campaign Dashboard (marketing metrics by campaign) and Value Realization Dashboard (ties Sprinklr usage to business outcomes / ROI).
 - A redesigned navigation experience (left menu bar) for finding, favoriting, and managing dashboards.
 - A Message Text filter for searching widget/dashboard data by specific post text.
-- Related GROOT topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[care-console]].
+- Related ARVIND topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[rule-engine]], [[care-console]].
 
 ## Key features & how to use
 

@@ -46,4 +46,4 @@ Capabilities and how each is turned on, by module:
 - Asset Management image features require the V2 image editor (`IMAGE_EDITOR_V2`) — older partitions on the legacy editor won't show them.
 - Publisher is the only module flagged with AI Configuration support (editable prompts, model choice, guardrails); the others are on/off + RBAC only.
 - Per-feature access is governed via Feature Access Management — see [[feature-access-management]] and [[rbac]].
-- Related GROOT topics: [[ai-studio]], [[ai-plus-studio]], [[image-editor]], [[publisher]], [[engagement-dashboards]], [[social-reporting]], [[dynamic-properties]].
+- Related ARVIND topics: [[ai-studio]], [[ai-plus-studio]], [[image-editor]], [[publisher]], [[engagement-dashboards]], [[social-reporting]], [[dynamic-properties]].

@@ -89,7 +89,7 @@
 - Historical backfill beyond two months needs custom scripts (article does not specify how to request/run them).
 - The articles do not specify exact required role/permission names for Dynamic Date Range, Activity tab, Tooltips, or Data Studio (beyond Standard Metrics View/Edit access).
 - Pinterest post-level backfill and several "not clearly specified" entries are not detailed in the source.
-- Related GROOT topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[care-console]], [[sla-monitoring]], [[rule-engine]].
+- Related ARVIND topics: [[reporting]], [[engagement-dashboards]], [[data-engine]], [[care-console]], [[sla-monitoring]], [[rule-engine]].
 
 ## Sources
 - Use Date Range in Reporting Dashboard to Customize Time Intervals — https://www.sprinklr.com/help/articles/advanced-features/use-date-range-in-reporting-dashboard-to-customize-time-intervals/64ff0ce6503ed17eb5c498d7

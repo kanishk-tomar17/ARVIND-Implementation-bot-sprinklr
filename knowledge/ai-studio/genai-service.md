@@ -62,4 +62,4 @@
 - **AI Configuration Support varies:** some features allow prompt editing, model selection, and guardrails; others don't.
 - DP-gated features only work if their parent module is enabled first.
 - RBAC is not supported on every feature — check before relying on role-based gating.
-- Related GROOT topics: [[intents]], [[faq-bots]], [[bot-rule-setup]], [[custom-fields]], [[rule-engine]], [[case-summarization]], [[knowledge-base]], [[quality-management]].
+- Related ARVIND topics: [[intents]], [[faq-bots]], [[bot-rule-setup]], [[custom-fields]], [[rule-engine]], [[case-summarization]], [[knowledge-base]], [[quality-management]].

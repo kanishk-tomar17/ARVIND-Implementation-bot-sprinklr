@@ -5,7 +5,7 @@ description: Use whenever you need a Sprinklr configuration fact, UI path, metri
 
 # Knowledge Lookup (Just-In-Time retrieval)
 
-GROOT does **not** pre-load the whole Sprinklr help center. It keeps a fast tier of already-distilled notes plus a lightweight **catalog of every help article**, and fetches live detail **only when a task needs it**. Treat `sprinklr.com/help` as an external database you query on demand — not something to read in bulk.
+ARVIND does **not** pre-load the whole Sprinklr help center. It keeps a fast tier of already-distilled notes plus a lightweight **catalog of every help article**, and fetches live detail **only when a task needs it**. Treat `sprinklr.com/help` as an external database you query on demand — not something to read in bulk.
 
 ## The loop — follow it in order
 

@@ -1,9 +1,9 @@
 # Help-center enrichment — catalog & method (locked 2026-06-15)
 
-Backbone for enriching GROOT's KB from **sprinklr.com/help** (whole platform, exhaustive). This folder is the **resumable tracking layer**; it is not GROOT knowledge itself.
+Backbone for enriching ARVIND's KB from **sprinklr.com/help** (whole platform, exhaustive). This folder is the **resumable tracking layer**; it is not ARVIND knowledge itself.
 
 ## ⭐ THE MAP (Just-In-Time retrieval, since 2026-06-17)
-The primary deliverable now lives at **`knowledge/sprinklr-map.json`** — GROOT's "GPS": **6,179 KB articles**, one JSON object per line (`area, category, topic, url, keywords, local_kb`). GROOT Greps it to find the 1–2 articles a task needs, then WebFetches only those. See the `knowledge-lookup` skill + `CLAUDE.md` lookup order. **Bulk distillation is frozen** — this folder's `catalog.md`/per-batch history below is superseded; kept for the GraphQL recipe.
+The primary deliverable now lives at **`knowledge/sprinklr-map.json`** — ARVIND's "GPS": **6,179 KB articles**, one JSON object per line (`area, category, topic, url, keywords, local_kb`). ARVIND Greps it to find the 1–2 articles a task needs, then WebFetches only those. See the `knowledge-lookup` skill + `CLAUDE.md` lookup order. **Bulk distillation is frozen** — this folder's `catalog.md`/per-batch history below is superseded; kept for the GraphQL recipe.
 
 **How the map is (re)built:**
 - `build_map.py` — portable full regenerator (Python + `requests`): crawls the GraphQL API and writes the map. Edit the CONFIG block (fresh token/cookie) and run. *Note: this machine has no Python installed — use the PS1 path below here.*

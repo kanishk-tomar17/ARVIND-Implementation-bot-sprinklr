@@ -31,4 +31,4 @@
 - On-request feature: Performance Insights (raise with Sprinklr to enable; surfaces in Creative Management App).
 - All gated by RBAC at Paid > Strategy Group or higher — check the consultant's role before troubleshooting "feature missing" reports.
 - For deeper setup of individual capabilities, re-fetch / cross-check against the specific Ads Manager and Creative Management App KB articles.
-- Related GROOT topics: [[ads-manager]], [[creative-management-app]], [[rbac]], [[custom-fields]], [[ai-studio-overview]]
+- Related ARVIND topics: [[ads-manager]], [[creative-management-app]], [[rbac]], [[custom-fields]], [[ai-studio-overview]]

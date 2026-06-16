@@ -40,4 +40,4 @@
 - Debug and Summarize coding features lack "AI Configuration Support" (no advanced customization).
 - Some features are "Not available in Feature Access Management" — you cannot toggle them per role.
 - The article is a capability catalog, not a step-by-step setup guide; exact DP values and per-feature config screens are not documented here — confirm in AI+ Studio or with Support.
-- Related GROOT topics: [[ai-studio]], [[rule-engine]], [[custom-fields]], [[intents]], [[bot-rule-setup]].
+- Related ARVIND topics: [[ai-studio]], [[rule-engine]], [[custom-fields]], [[intents]], [[bot-rule-setup]].

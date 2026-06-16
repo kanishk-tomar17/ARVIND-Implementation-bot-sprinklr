@@ -38,4 +38,4 @@ General path to turn on: confirm the feature is enabled (request via Sprinklr / 
 - Two enablement models: "enabled on request" (Benchmarking, Surveys) vs "enabled with AI+ Studio" (both Social Listening copilots). Listening copilots depend on AI+ Studio being set up first.
 - RBAC applies — Benchmarking and Surveys copilots both note Role-Based Access Control; provision roles before users see the feature.
 - For exact roles, AI+ Studio setup, and live UI steps, confirm in-platform or re-fetch the article for updates.
-- Related GROOT topics: [[ai-plus-studio]], [[social-listening]], [[listening-dashboard]], [[benchmarking]], [[surveys]], [[rbac]]
+- Related ARVIND topics: [[ai-plus-studio]], [[social-listening]], [[listening-dashboard]], [[benchmarking]], [[surveys]], [[rbac]]
