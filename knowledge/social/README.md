@@ -42,6 +42,9 @@ Per-channel setup, publishing, engagement, and reporting. Distilled from both ar
 - `facebook/` ✅ — overview, add-accounts, manage-accounts, publishing, publishing-advanced, engagement-columns, engagement-reply, reporting-dashboards, reporting-glossary (75 articles, 55 screenshots viewed).
 - `instagram/` ✅ — overview, setup-accounts, publishing, publishing-advanced, engagement-columns, engagement-reply, messaging-advanced (DM automation/handover), reporting, reporting-glossary (67 articles, 65 screenshots viewed).
 - `x-twitter/` ✅ — overview (account types & Premium), setup, publishing, advanced publishing, engagement, reporting (43 articles, 32 screenshots viewed).
-- (pending) youtube (23), linkedin (22), tiktok (14), + long-tail channels (WhatsApp/LINE/WeChat/Reddit/Pinterest/Threads/BlueSky/review sites/messaging apps, etc.).
+- `youtube/` ✅ — setup, publishing, engagement, reporting (23 articles, 24 screenshots viewed).
+- `linkedin/` ✅ — setup, publishing, engagement, reporting (22 articles, 22 screenshots viewed).
+- `tiktok/` ✅ — overview-setup, publishing-engagement, reporting (14 articles, 9 screenshots viewed).
+- **Big-6 channels complete.** (pending) long-tail channels (WhatsApp/LINE/WeChat/Reddit/Pinterest/Threads/BlueSky/Viber/Telegram/Snapchat/review sites/Vanilla/Lithium/Gainsight/Yotpo/Weibo/MS-Teams/Slack/etc.).
 
 ### (pending) advocacy, distributed, asset-manager, rule-engine, settings, link-in-bio, content-variants
