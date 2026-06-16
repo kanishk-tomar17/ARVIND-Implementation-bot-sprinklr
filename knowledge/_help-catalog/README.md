@@ -2,7 +2,15 @@
 
 Backbone for enriching GROOT's KB from **sprinklr.com/help** (whole platform, exhaustive). This folder is the **resumable tracking layer**; it is not GROOT knowledge itself.
 
-## Files
+## ⭐ THE MAP (Just-In-Time retrieval, since 2026-06-17)
+The primary deliverable now lives at **`knowledge/sprinklr-map.json`** — GROOT's "GPS": **6,179 KB articles**, one JSON object per line (`area, category, topic, url, keywords, local_kb`). GROOT Greps it to find the 1–2 articles a task needs, then WebFetches only those. See the `knowledge-lookup` skill + `CLAUDE.md` lookup order. **Bulk distillation is frozen** — this folder's `catalog.md`/per-batch history below is superseded; kept for the GraphQL recipe.
+
+**How the map is (re)built:**
+- `build_map.py` — portable full regenerator (Python + `requests`): crawls the GraphQL API and writes the map. Edit the CONFIG block (fresh token/cookie) and run. *Note: this machine has no Python installed — use the PS1 path below here.*
+- `raw/all-rows.json` — snapshot of the full crawl (6,179 rows, area/category/topic/url/keywords). Produced by an in-browser GraphQL crawl dumped via `evaluate_script` `filePath`.
+- `_assemble_map.ps1` — no-Python assembler used on this machine: reads `raw/all-rows.json`, joins `local_kb` by scanning distilled `## Sources`, writes `sprinklr-map.json` + `raw/<area>.jsonl`. **Re-run this after distilling new articles to refresh `local_kb` links** (no re-crawl needed). Per-area counts: Service 2442, Social 1333, Marketing 1079, Insights 690, Platform 620, AI 15.
+
+## Files (legacy bulk-distill tracking)
 - `sitemap-urls.txt` — all 3040 URLs from `https://www.sprinklr.com/help/sitemap.xml` (2978 `/categories/` + 61 `/topics/` + home). **The sitemap contains NO `/articles/` URLs** — categories are index pages; the real articles are discovered by scraping each category page.
 - `catalog.md` — one row per enumerated article: `area | category | article-title | article-url | target KB file | status`. Updated as batches complete; lets every run skip done work.
 
