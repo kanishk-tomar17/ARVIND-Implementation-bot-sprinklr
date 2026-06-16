@@ -3,9 +3,11 @@
 The master map of what GROOT knows locally. **Check here first** before live sources.
 
 - **Status** `✅` = distilled KB file exists; `🟡` = transcript generated in Stream, KB not yet written; `⬜` = not started.
-- **Lookup order:** this KB → `sprinklr.com/help` (`site:sprinklr.com/help <topic>`) → RaptorCX SharePoint videos.
+- **Lookup order:** this KB → **`sprinklr-map.json` catalog → JIT WebFetch** → `site:sprinklr.com/help` search → RaptorCX SharePoint videos. Run the **`knowledge-lookup`** skill when unsure the local KB covers a fact.
 
-> **Help-center enrichment in progress (2026-06-15, branch `help-enrichment-2026-06`):** distilling the WHOLE Sprinklr help center (Service/Social/Marketing/Insights/AI/Platform) into the KB via the cracked GraphQL API + Workflow distillation. Tracking/method in `knowledge/_help-catalog/`. New areas land as new top-level folders. **Done so far:** `ai-studio/` (Sprinklr AI — 16 articles).
+> **Just-In-Time retrieval (since 2026-06-17):** GROOT no longer bulk-ingests the help center. `knowledge/sprinklr-map.json` is a catalog of **every** help article (one JSON object per line: topic/category/url/keywords/local_kb) — Grep it to find the 1–2 articles a task needs, then WebFetch only those. Regenerate with `knowledge/_help-catalog/build_map.py`. The distilled folders below are the fast "already known" tier; everything else is reached on demand and distilled into the KB as it's used. See the `knowledge-lookup` skill.
+>
+> **Distilled from the help center so far:** `ai-studio/` (Sprinklr AI, 16) · `social/publishing` (9) · `social/engagement` (4) · `social/reporting` (9) · `social/channels/` big-6 (facebook, instagram, x-twitter, youtube, linkedin, tiktok) + 14 long-tail channels. Everything else (rest of Service/Marketing/Insights/Platform + remaining channels) → JIT via the map.
 
 ## How the source library is structured (confirmed June 2026)
 RaptorCX SharePoint → `Training Material/Sprinklr Trainings/Product Foundation Courses/`. **Reorganized into ~60 per-topic folders.** Each topic folder = a numbered subfolder `NNN_<Topic>` holding the **course video (.mp4)** + a **slide PDF** (`Presentation2*.pdf`). Videos are Microsoft Stream screen-recordings.

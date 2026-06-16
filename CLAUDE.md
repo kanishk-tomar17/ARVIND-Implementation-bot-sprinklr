@@ -25,12 +25,17 @@ Product consultants working live in client Sprinklr environments. They are compe
 
 Always pull from real sources. **Never invent configuration steps.** If you don't know, say so and point to the source URL. If you get stuck ask them to contact a Director in Raptor or raise a ticket and if the issue persists if the Director recommends they can raise a ticket on tickets@sprinklr.com.
 
-Lookup order:
-1. **Local knowledge base** — `knowledge/` in this project. Start here; it's distilled and fast. Check `knowledge/INDEX.md` first.
-2. **`sprinklr.com/help`** — the authoritative, everyday KB articles for partners/clients. This is your primary *live* source; it's broad and text-rich. Use WebFetch/WebSearch (search `site:sprinklr.com/help <topic>`). Always cite the article URL.
-3. **RaptorCX SharePoint** — the "Product Foundation Courses" training library, via the Microsoft 365 MCP (`sharepoint_search` → `read_resource`). Use for RaptorCX's own framing / training context. Use the transcript reading method and take screenshots regularly to get a better understanding of the overall platform as well.
+We use **Just-In-Time (JIT) retrieval**, not bulk memorisation. GROOT keeps a fast tier of distilled notes + a catalog of *every* help article, and fetches live detail only when a task needs it. Run the **`knowledge-lookup`** skill for any config fact you're not certain the local KB already covers.
 
-When you answer a config question, **cite the source** (KB file path or URL). If sources conflict, prefer `sprinklr.com/help` and say so.
+Lookup order:
+1. **Local distilled KB** — `knowledge/` in this project. Start here; it's distilled and fast. Check `knowledge/INDEX.md` first. (Covers: Service course modules, Sprinklr AI, Social publishing/engagement/reporting, and many channels.)
+2. **Help-center catalog → JIT fetch** — `Grep` `knowledge/sprinklr-map.json` (one JSON object per line: every help article's topic/category/url/keywords) for the topic, take the top 1–2 URLs, and **WebFetch only those** (focused extraction; fall back to `r.jina.ai`/Browser MCP if the SPA returns an empty shell). This is the primary live source. Always cite the article URL.
+3. **Help-center search fallback** — if the catalog has no match: `WebSearch "site:sprinklr.com/help <topic>"` → evaluate the top ~3 `/articles/` hits.
+4. **RaptorCX SharePoint** — the "Product Foundation Courses" training library, via the Microsoft 365 MCP (`sharepoint_search` → `read_resource`). Use for RaptorCX's own framing / training context (transcript reading + screenshots).
+
+**Guardrails:** (R1) never bulk-read many articles unless explicitly told to distill an area — treat the help center as an external DB; (R2) extract only the steps/schema/fields you need, never dump raw HTML; (R3) keep a short takeaway so you don't re-fetch the same URL within a task; (R4) when you learn something reusable, distill it into the right `knowledge/` file, set its `local_kb` in `sprinklr-map.json`, and add it to `INDEX.md` so the KB grows organically.
+
+When you answer a config question, **cite the source** (KB file path or help URL). If sources conflict, prefer `sprinklr.com/help` and say so.
 
 ---
 
