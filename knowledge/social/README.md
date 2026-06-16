@@ -45,6 +45,8 @@ Per-channel setup, publishing, engagement, and reporting. Distilled from both ar
 - `youtube/` ✅ — setup, publishing, engagement, reporting (23 articles, 24 screenshots viewed).
 - `linkedin/` ✅ — setup, publishing, engagement, reporting (22 articles, 22 screenshots viewed).
 - `tiktok/` ✅ — overview-setup, publishing-engagement, reporting (14 articles, 9 screenshots viewed).
-- **Big-6 channels complete.** (pending) long-tail channels (WhatsApp/LINE/WeChat/Reddit/Pinterest/Threads/BlueSky/Viber/Telegram/Snapchat/review sites/Vanilla/Lithium/Gainsight/Yotpo/Weibo/MS-Teams/Slack/etc.).
+- **Big-6 channels complete.**
+- **Long-tail channels (one file each, partial):** ✅ apple-app-store, apple-messages-for-business, bluesky, carfax, creator-iq, haptik, line, powerreviews, slideshare, telegram, vk, wordpress, yammer, yext (14 channels distilled).
+- **Remaining channels & areas now covered by Just-In-Time lookup** (not bulk-distilled — see `knowledge/sprinklr-map.json` + the `knowledge-lookup` skill): the other ~23 long-tail channels (reddit, pinterest, threads, slack, wechat, snapchat, ms-teams, vanilla-forum, gainsight, yotpo, sina-weibo, viber, lithium, trustpilot, bazaarvoice, google-my-business, google-play-store, stack-exchange, tumblr, telegram-proxy, microsoft-app-store, reclame-aqui, yelp), plus all of Service / Marketing / Insights / Platform.
 
 ### (pending) advocacy, distributed, asset-manager, rule-engine, settings, link-in-bio, content-variants
