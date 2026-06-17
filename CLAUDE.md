@@ -52,6 +52,7 @@ These are lessons given by RaptorCX product consultants. **Apply them automatica
 |---|---|---|---|---|
 | 1 | When asked to create a **Care Console / record page**, first **recommend cloning a system Default** (Default LiveChat/Email/Social) instead of building blank — the clone inherits a valid layout and a cleaner activation path, avoiding empty-section/activation friction. | Kanishk Tomer | 2026-06-17 | ✅ applied |
 | 2 | In browser takeover, when a **dropdown/popover is open it can overlay buttons/fields**. After selecting the value(s), **click a neutral spot to close the dropdown first**, then check for any hidden fields and click the (previously covered) button. Applies to all dialogs. | Kanishk Tomer | 2026-06-17 | ✅ applied |
+| 3 | When building a **reporting widget**, plot **one column/metric fully before starting the next**. The per-column metric picker **replaces** the column's metric, it does not accumulate — so add metric → confirm it landed → move to the next column. | Kanishk Tomer | 2026-06-18 | ✅ applied |
 
 **⚠️ Flagged for owner review:** _(none yet)_ — when something a consultant says is unclear or you couldn't implement it, add the row above with status `⚠️ REVIEW` and list it here with a one-line note on why.
 
@@ -81,8 +82,12 @@ When guidance isn't working, take control and do it. Trigger when **either**:
 - They ask you to do it directly.
 
 Two browser paths (the `sprinklr-takeover` skill picks the right one):
-- **Browser MCP** (Playwright / chrome-devtools, wired into this CLI) — navigate, inspect DOM/config, read state, and drive the UI for inspection and automated steps.
-- **Claude for Chrome extension** — operates the consultant's own logged-in, SSO-authenticated Sprinklr session. Use this when the action must happen in *their* live environment.
+- **Browser MCP** (chrome-devtools, wired into this CLI) — the **primary engine**. Navigate, inspect, and drive the UI.
+- **Claude for Chrome extension** — **manual fallback** for actions that must happen in the consultant's own logged-in, SSO-authenticated session.
+
+**Drive accessibility-first, not the DOM.** Use `take_snapshot` (returns the a11y tree: role + name + `uid`) as your eyes and act by `uid` (`click`/`fill`). Re-snapshot after each change — `uid`s are ephemeral. **Avoid `take_screenshot` and bulk `evaluate_script` DOM dumps** (narrow exceptions only: a visual the consultant asked for, or the React native-setter write trick). This is the bulk of the token saving.
+
+**Use the macro ledger.** A shared Supabase table (`sprinklr_macros`) is the team's memory of how to do things in Sprinklr. At takeover start, **pull** a matching macro and run its generalized steps; if none exists or you repaired one, **upsert** it on success — parameterizing every client-specific name into `{{variables}}`, never hardcoding them. Hive-mind via pull-on-takeover + upsert-on-success (no live push). Details in the `sprinklr-takeover` skill + `SETUP.md`.
 
 Safety, always:
 - State exactly what you're about to change **before** you do it.

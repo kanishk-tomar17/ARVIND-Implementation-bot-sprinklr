@@ -16,6 +16,8 @@ Launch (see `LEARNING.md` for the full runbook):
 
 **Use it for:** learning from Lyearn courses + the live platform, inspecting what's actually configured, reading rule/queue state, automated steps.
 
+**How ARVIND drives it:** accessibility-first. `take_snapshot` returns the a11y tree (role + name + `uid`); ARVIND acts by `uid`. It avoids screenshots and bulk DOM dumps to stay fast and token-light. (See the `sprinklr-takeover` skill.)
+
 ---
 
 ## 2. Claude for Chrome extension (live SSO session takeover)
@@ -53,3 +55,18 @@ The `sprinklr-takeover` skill encodes this decision.
 - **RaptorCX SharePoint** (Product Foundation Courses): via the Microsoft 365 MCP. Confirm it's connected with `/mcp`. If not, re-authenticate the Microsoft 365 connector.
 
 Quick check after setup: ask ARVIND "How do assignment rules work in Unified Routing?" — it should answer from the KB / `sprinklr.com/help` with a source link.
+
+---
+
+## 5. Macro ledger (Supabase) — shared team memory of "how to do things"
+
+ARVIND stores reusable, *generalized* navigation paths ("macros") in a shared Supabase table, `sprinklr_macros`, reached through the **Supabase MCP**. At takeover it **pulls** a matching macro and runs it; on success (or after repairing one) it **upserts** the path back. A path discovered by one consultant is then available to everyone — hive-mind by pull-on-takeover + upsert-on-success (there is no live push).
+
+One-time setup per consultant:
+1. In **claude.ai → Settings → Connectors**, connect **Supabase** and authorize the account that owns the **shared RaptorCX Supabase organisation** (the one holding the `arvind-macros` project). Switching accounts = Disconnect, then reconnect with the right login.
+2. Confirm in this app with `/mcp` that the Supabase server is connected and `list_organizations` shows the shared org.
+3. That's it — ARVIND reads/writes `sprinklr_macros` directly via the MCP. Membership in the shared project is what grants access.
+
+**Security:** access is via each consultant's own Supabase connector auth — **no service key or secret is stored in this repo** (and none is shipped in the team-distribution repo). Only the non-sensitive project reference and the protocol live in the skill.
+
+If the Supabase MCP isn't connected, ARVIND still works — it just drives the task manually with the a11y loop and offers to record the macro once the connector is up.
