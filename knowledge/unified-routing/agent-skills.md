@@ -16,10 +16,18 @@
 
 ## Configuration (Unified Routing module)
 - **Skills tab (2nd):** add a **skill category** (e.g. Language) and **multiple skills** within it (English, …); add a skill to an existing category via its button.
-- **Agents tab (3rd):** search an agent → **Edit** → "skills and capacity" form shows current skills + proficiency.
-  - **Add to All** to edit proficiency; **Remove from All** to remove; add new skill = select category → skill → proficiency → Save.
-  - **Bulk assignment:** select multiple users → bulk skill edit (skill + proficiency).
-- **User Group tab:** Edit → assign skills to the whole group (e.g. English proficiency 80). ⚠️ **Bulk update only** — users added to the group *later* do **not** auto-inherit these skills.
+- **Agents tab (`/unified-routing/agents`):** VERIFIED live 2026-06-18 — this tab **shows the User Groups list** (agents are managed via user groups). Each row's **More Actions** menu = **Edit · View Activity · Remove · Reset · View Usages**.
+- **Edit → a 3-tab wizard** (right panel shows the group + type Static/Dynamic):
+  1. **Set Skills** — *User Skills* → **Add Skill** (pick skill + proficiency 0–100).
+  2. **Capacity** — **Capacity Profile** (assign one) + **Daily Reset Configuration** (Country + Timezone — when the daily assignment target resets).
+  3. **Voice Settings** (each field has an (i) tooltip):
+     - **Call Handling** — *"when enabled, you can handle incoming and outgoing calls."*
+     - **Auto Answer** — enable/disable auto-answering.
+     - **Agent Readiness** — *system runs Microphone & WebRTC checks; on failure the agent is set to "System Not Ready" and can't go available until fixed.*
+     - **Nailed Up Call** — *"nailed up connection will only be preferred if there is only one voice account shared."* (Prefer / Do Not Prefer.)
+     - **VOIP Calling** — *VoIP allows voice calls over the internet* (enable/disable).
+     - **Configure Provider Settings → Twilio Provider Config** (*"Twilio VoIP call parameters for the agent's leg"*): **WebRTC Logs**, **Codec Preference** (in priority order), **Maximum Average Bitrate** (6000–510000 hz).
+  - **Bulk:** select multiple users/groups → bulk edit. ⚠️ User-group skill/capacity assignment is **bulk-only** — members added *later* don't auto-inherit (re-run on onboarding).
 
 ## How skill-based routing works
 1. **Tag skills on the case** (driven by IVR flow, chatbot flow, region, or account).

@@ -30,3 +30,11 @@ Case enters queue → match agents by skill/proficiency → if none available, *
 - Each relaxation **degrades match quality to protect wait time** — sequence them so the customer is answered before they drop off, not so aggressively that quality collapses.
 - Per-channel routing groups let one queue serve sync (chat/voice — short waits) and async (email — hours) very differently.
 - Builds directly on [[agent-skills]] (skills/proficiency) and feeds [[routing-types]]/[[smart-routing]].
+
+## Live UI verified (prod8, 2026-06-18)
+Queue builder → **Routing Configuration** step. Structure = **Routing Group(s)** → each has a **Filter** + one or more **Action Group(s)**:
+- **Filter** (per Routing Group): `Select Attribute` → `Select Operator` → `Select Value` (+ Add Filter). Determines which cases this group applies to.
+- **Action Group:** a wait condition — radio **Wait for assignment** vs **Estimated wait time**; checkbox **"Skip wait time if no users are available"** (default on); **Wait to assign for:** time + unit (with a **Dynamic Input Type** toggle to drive the wait from a variable); then **If not assigned then → Select Action**.
+- **Select Action options (verified exact list):** **Change Priority · Change Proficiency by Skill · Change Proficiency by Skill Category · Drop Skill · Drop Skill Category · Send To Another Queue · Backup Queues (Retain original skills) · Backup Queues.**
+- Buttons: **+ Add Action** (chain actions in a group), **+ Add Action Group**, **+ Add Routing Group**.
+- (To reach this step in the wizard you must first fill Queue Name + Routing Type on General Settings.)

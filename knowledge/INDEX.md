@@ -94,9 +94,12 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Video call and co-browsing configuration (094) | ✅ | live-chat/video-cobrowsing.md |
 | Chat deflection (088) | ✅ | live-chat/chat-deflection.md |
 
-## Unified Routing (hyphenated folders `Unified Routing - <topic>`; 8)
+## Unified Routing (hyphenated folders `Unified Routing - <topic>`; 11)
 | Topic | Status | KB file |
 |---|---|---|
+| **Overview — app map / 6 tabs** (live + help) | ✅ | unified-routing/overview.md |
+| Custom Channels (help) | ✅ | unified-routing/custom-channels.md |
+| Debug Console — historical wait reasons (help) | ✅ | unified-routing/debug-console.md |
 | Routing types (029) | ✅ | unified-routing/routing-types.md |
 | Routing configuration (025) | ✅ | unified-routing/routing-configuration.md |
 | Capacity configuration (024) | ✅ | unified-routing/capacity-configuration.md |

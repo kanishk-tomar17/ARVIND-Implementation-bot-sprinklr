@@ -33,7 +33,7 @@ Lookup order:
 3. **Help-center search fallback** — if the catalog has no match: `WebSearch "site:sprinklr.com/help <topic>"` → evaluate the top ~3 `/articles/` hits.
 4. **RaptorCX SharePoint** — the "Product Foundation Courses" training library, via the Microsoft 365 MCP (`sharepoint_search` → `read_resource`). Use for RaptorCX's own framing / training context (transcript reading + screenshots).
 
-**Guardrails:** (R1) never bulk-read many articles unless explicitly told to distill an area — treat the help center as an external DB; (R2) extract only the steps/schema/fields you need, never dump raw HTML; (R3) keep a short takeaway so you don't re-fetch the same URL within a task; (R4) when you learn something reusable, distill it into the right `knowledge/` file, set its `local_kb` in `sprinklr-map.json`, and add it to `INDEX.md` so the KB grows organically.
+**Guardrails:** (R1) never bulk-read many articles unless explicitly told to distill an area — treat the help center as an external DB; (R2) extract only the steps/schema/fields you need, never dump raw HTML; (R3) keep a short takeaway so you don't re-fetch the same URL within a task; (R4) **Keep all RAG layers in sync on every request — proactively, without being asked, and including edits and deletes.** Whenever a task adds, changes, or removes Sprinklr knowledge or a workflow, reconcile **all three layers + the index** in the same turn: (a) **knowledge base** — create/edit/delete the distilled `knowledge/*.md` file; (b) **map** — set/update/clear its `local_kb` in `sprinklr-map.json`; (c) **macro ledger** — upsert/update (or deactivate) the macro in Supabase `sprinklr_macros`; (d) **`INDEX.md`** — add/rename/remove the row. If something is deleted, remove it everywhere. The KB grows (and stays correct) organically. See the `sprinklr-explore` skill.
 
 When you answer a config question, **cite the source** (KB file path or help URL). If sources conflict, prefer `sprinklr.com/help` and say so.
 
@@ -53,6 +53,10 @@ These are lessons given by RaptorCX product consultants. **Apply them automatica
 | 1 | When asked to create a **Care Console / record page**, first **recommend cloning a system Default** (Default LiveChat/Email/Social) instead of building blank — the clone inherits a valid layout and a cleaner activation path, avoiding empty-section/activation friction. | Kanishk Tomer | 2026-06-17 | ✅ applied |
 | 2 | In browser takeover, when a **dropdown/popover is open it can overlay buttons/fields**. After selecting the value(s), **click a neutral spot to close the dropdown first**, then check for any hidden fields and click the (previously covered) button. Applies to all dialogs. | Kanishk Tomer | 2026-06-17 | ✅ applied |
 | 3 | When building a **reporting widget**, plot **one column/metric fully before starting the next**. The per-column metric picker **replaces** the column's metric, it does not accumulate — so add metric → confirm it landed → move to the next column. | Kanishk Tomer | 2026-06-18 | ✅ applied |
+| 4 | For a **Work Queue routing type**, when **no skills are defined**, use **"All Skill Matching"** (with no skill criteria it considers all eligible agents) rather than Round Robin / skill-based options. | Kanishk Tomer | 2026-06-18 | ✅ applied |
+| 5 | In takeover, if a **mandatory field the consultant never specified** blocks you (and you're unsure of the value), **ask the consultant directly with a sensible suggested default** — don't burn multiple snapshots probing the UI for it. | Kanishk Tomer | 2026-06-18 | ✅ applied |
+| 6 | When exploring/learning a screen (or driving an unfamiliar one), **be exhaustive — don't skip anything clickable**: click every button, **step through ALL tabs/wizard steps** (not just step 1), open nested "+Add" groups, **read every (i) tooltip** (they're in the a11y snapshot as field `description`s), **flip every toggle ON to reveal its conditional fields**, and open every dropdown for its full option list. Captured in the `sprinklr-explore` skill. | Kanishk Tomer | 2026-06-18 | ✅ applied |
+| 7 | **Keep all RAG layers in sync automatically — don't wait to be told.** Every request that adds/changes/removes knowledge or a workflow must, in the same turn, update the **knowledge base** (`knowledge/*.md`), the **map** (`sprinklr-map.json` `local_kb`), the **macro ledger** (Supabase), and **`INDEX.md`** — create, **edit, or delete** across all of them so they never drift. (R4 in KNOWLEDGE.) | Kanishk Tomer | 2026-06-18 | ✅ applied |
 
 **⚠️ Flagged for owner review:** _(none yet)_ — when something a consultant says is unclear or you couldn't implement it, add the row above with status `⚠️ REVIEW` and list it here with a one-line note on why.
 
@@ -112,6 +116,7 @@ Safety, always:
 - `sprinklr-diagnose` — the screenshot-driven triage → clarify → plan → guide → escalate flow.
 - `sprinklr-implement` — use-case implementation playbook (requirements → Sprinklr config mapping → ordered steps → verify).
 - `sprinklr-takeover` — when and how to take control of the browser safely.
+- `sprinklr-explore` — exhaustive UI-discovery discipline (click everything, all tabs, read (i) tooltips, flip toggles) when learning a screen or driving an unfamiliar one during takeover.
 - `nest-table-bullets`, `taste` — formatting/cleanup helpers.
 
 See `SETUP.md` for browser MCP + Chrome extension setup.

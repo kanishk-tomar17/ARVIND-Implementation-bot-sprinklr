@@ -15,6 +15,8 @@ Announce the switch: "I'll take it from here — let me drive the browser." Don'
 
 ---
 
+> **Pair with [[sprinklr-explore]]:** when a takeover means driving an unfamiliar screen, apply the `sprinklr-explore` discipline — step through every tab/wizard step, read the (i) tooltips (they're in the a11y snapshot as field `description`s), flip toggles to reveal conditional fields, and open dropdowns for their full option lists. It's the same a11y-first technique set, and it stops you missing fields mid-takeover.
+
 ## A. Interaction loop — accessibility-first (do NOT scrape the DOM)
 
 The browser is driven through the **`chrome-devtools` MCP**, which already gives you a semantic accessibility tree with ref ids. Use it. This is the default and it is what keeps takeover fast and cheap.
