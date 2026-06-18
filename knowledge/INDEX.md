@@ -199,9 +199,10 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Ignore duplicate & auto-response emails (137) | ✅ | email-care/ignore-duplicate-autoresponse.md |
 | Email templates (HTML) (138) | ✅ | email-care/email-templates.md |
 
-## IVR (folder: `IVR`; topics 146–151; 6)
+## IVR (folder: `IVR`; topics 146–151 + verified builder; 7)
 | Topic | Status | KB file |
 |---|---|---|
+| IVR flow builder — manager, create flow & full 52-node catalog | ✅ VERIFIED live (prod8, 2026-06-18) | ivr/flow-builder.md |
 | IVR communication nodes (146) | ✅ | ivr/communication-nodes.md |
 | IVR disconnect journey (147) | ✅ | ivr/disconnect-journey.md |
 | IVR transaction and its reporting (148) | ✅ | ivr/transaction-reporting.md |
