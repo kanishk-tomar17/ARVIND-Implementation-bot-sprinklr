@@ -24,6 +24,19 @@ Record interaction for **reporting**; create **workflows** based on the interact
 ## Agent experience
 After the call ends (via call controls or customer hangs up), the **ACW pops up**. Configurable: the **timer**, and **when** it pops (before/after/during the call, or even for **unconnected** calls). Agent selects primary outcome (e.g. FCR), secondary (e.g. Query), fills fields, sets callback date → **Next** → callback scheduled, agent freed for next call.
 
+## Live builder — VERIFIED (prod8, 2026-06-18)
+**Access:** Launchpad → **After Call Work** (Resolve) → **ACW Manager** at `/care/after-call-work/manager`. Sub-nav: **Manager · Disposition Plans · Global Disposition Field Library** (the reusable disposition-field/data-type library). List cols: Process Name · Maximum Time · Maximum Time Unit · Created By/On · Last Modified. Row actions: Edit · Edit Settings · Translations · Clone · Share · Delete · View Reports · View Usages.
+
+**Create New ACW → settings form first:** Name\*, Description, **Type\*** (**Optional ACW · Mandatory ACW · Mandatory ACW with time limit for agent · …with no early exit**), **After Call Work Timeout** + **Agent Status when ACW timeout happens** (for time-limit types), **Auto Wrap Settings** (Auto Wrap Up Time / Same as ACW Timeout), **Advanced Settings** (Allow ACW during call, **Trigger ACW as soon as call starts**, Keep Case Assigned After Call, Show/Timeout ACW for not-connected outbound calls, Disable ACW Redial, Custom Dialer Support in Redialer), **Extension Settings** (Number of Extensions Allowed Per Call, Extension Time). Save → opens the node builder.
+
+**Node builder** (same engine as the IVR builder: canvas + **Add Element** palette + Save / **Save & Deploy**; Manage Resources; Activity). **Palette — 4 categories:**
+- **USER COMMUNICATION:** **Screen** (the agent's ACW form screen — host the **Call Disposition** component → pick a disposition plan; one call-disposition per screen, disposition *groups* for multiple), **Transition Screen**.
+- **CUSTOMER COMMUNICATION:** Send SMS/Email/Whatsapp · Send Survey · **Schedule Callback** · Reschedule Callback · Cancel Callback.
+- **SYSTEM ACTIONS:** Get/Update/Create/Count Records · Decision Box · Add API · Add Note · **Add Loop / Break Loop** · Custom Fields Action · Add or Remove from Queues · Update Properties · Add to suppression list · Call Another Flow · Embed Workflow · Execute Action.
+- **FLOW ACTIONS:** Go To Node · End Execution.
+
+Classic schedule-callback ACW = **Screen** (Call Disposition) → **Add Loop** over the disposition fields → **Schedule Callback** (callback number, callback time = agent-entered date, work queue).
+
 ## Notes / gaps
-- ACW builder hosts the [[disposition-plan]] + schedule-callback flow; ACW pop-up is triggered from [[call-controls]]; callback feeds the dialer/callback. Completes Inbound Voice.
+- ACW builder hosts the [[disposition-plan]] + schedule-callback flow; ACW pop-up is triggered from [[call-controls]]; callback feeds the dialer/callback. Completes Inbound Voice. Macro: `create_acw` (ledger).
 - Part of Inbound Voice: [[telephony-integration]], [[voice-connectivity]], [[custom-fields]], [[ivr]], [[persona]], [[care-console]], [[guided-workflows]], [[call-controls]], [[disposition-plan]].

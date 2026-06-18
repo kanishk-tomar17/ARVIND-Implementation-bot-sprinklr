@@ -213,7 +213,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Inbound Voice (folder: `Inbound Voice`; topics 153–162; 10)
 | Topic | Status | KB file |
 |---|---|---|
-| Telephony Integration (153) | ✅ | inbound-voice/telephony-integration.md |
+| Telephony Integration (153) — + verified Voice Settings hub / Voice Application (4-tab) / Voice Account | ✅ VERIFIED live (prod8, 2026-06-18) | inbound-voice/telephony-integration.md |
 | Voice connectivity (154) | ✅ | inbound-voice/voice-connectivity.md |
 | Custom fields (155) | ✅ | inbound-voice/custom-fields.md |
 | IVR (156) | ✅ | inbound-voice/ivr.md |
@@ -221,8 +221,8 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Care console (158) | ✅ | inbound-voice/care-console.md |
 | Guided Workflows (159) | ✅ | inbound-voice/guided-workflows.md |
 | Call controls (160) | ✅ | inbound-voice/call-controls.md |
-| Disposition plan (161) | ✅ | inbound-voice/disposition-plan.md |
-| ACW builder (162) | ✅ | inbound-voice/acw-builder.md |
+| Disposition plan (161) — + verified 3-step builder (Settings/Autowrap/Share) + Edit Fields | ✅ VERIFIED live (prod8, 2026-06-18) | inbound-voice/disposition-plan.md |
+| ACW builder (162) — + verified ACW Manager, settings form & node palette | ✅ VERIFIED live (prod8, 2026-06-18) | inbound-voice/acw-builder.md |
 
 ## Journey Facilitator (folder: `Journey Facilitator`; topics 139–145; 7)
 | Topic | Status | KB file |

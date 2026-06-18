@@ -26,6 +26,16 @@ A widget on **Call Disposition / Disposition / Callback date-time** + **Call Cou
 ## Live example — HDFC (banking)
 Disposition plan "Banking": dispositions = **Debit card, Bank account, Fixed deposits, Recurring deposits, Dream deposits**; sub-dispositions = **FCR, Non-FCR, Partial FCR**; ~**30+ fields** (banking has many products/departments — banking, credit card, loans, etc.).
 
+## Live builder — VERIFIED (prod8, 2026-06-18)
+**Location:** Voice Settings → **Disposition Plan** (`/care/voice/settings/dispositions`); also reachable from the **ACW Manager** sub-nav. List cols: Disposition Name · Dispositions · dates. **Row actions: Edit Dispositions · Edit Fields · Clone · Translations · Delete** — note **dispositions and fields are edited separately** (the form *fields*/data-types live in **Edit Fields** / the **Global Disposition Field Library** in the ACW app).
+
+**Create/Edit Dispositions = 3-step wizard:**
+- **1. Disposition Plan Settings:** Disposition Plan Name\*; then **Add Disposition** → per disposition: **Disposition Label** + **Disposition** value(s), **Sub-Disposition Label** + **Sub-Disposition(s)** (free-text **type-then-click "Create X"** pattern to add new values), **Disposition Condition** / **Sub-Disposition Condition**, and **Enable Disposition Visibility Conditions** (toggle → **Where**/field + **Operator** + **Values**, **Add Condition / Add Condition Group**). Add any number of dispositions.
+- **2. Autowrap Up Settings:** **Enable Auto Wrap Up**; auto-fill rules — **When disposition & sub-disposition unfilled** (Value Type + default Disposition\* + Sub-Disposition\*) and **When only sub-disposition unfilled** (per-disposition default Sub-Disposition mapping); **Hide option(s) on ACW** (select dispositions/sub-dispositions to hide on the agent form).
+- **3. Share Settings:** Visible in all workspaces / Workspaces / Users-Groups.
+
+**Field data types** (in Edit Fields / Global Disposition Field Library): Text Area, Date, Date-Time, Number, Pick List, Text Input, Multi Pick List — each mandatory/optional with error messages, business-hours & visibility/future-date conditions (per course KB above).
+
 ## Notes / gaps
-- Disposition is the ACW form; the SCW + schedule-callback flow ties to [[acw-builder]] and [[call-controls]]; callback feeds the dialer/callback flow. Uses Groovy ([[groovy-scripts]]).
+- Disposition is the ACW form; the SCW + schedule-callback flow ties to [[acw-builder]] and [[call-controls]]; callback feeds the dialer/callback flow. Uses Groovy ([[groovy-scripts]]). Macro: `create_disposition_plan` (ledger).
 - Part of Inbound Voice: [[telephony-integration]], [[voice-connectivity]], [[custom-fields]], [[ivr]], [[persona]], [[care-console]], [[guided-workflows]], [[call-controls]], [[acw-builder]].
