@@ -20,8 +20,11 @@ ARVIND does **not** pre-load the whole Sprinklr help center. It keeps a fast tie
         │  Take the TOP 1–2 most relevant entries (their "url").
         │  If an entry has "local_kb": <file> → read that file first (it's distilled).
         ▼
-3. JIT FETCH ── WebFetch the 1–2 urls with a FOCUSED extraction prompt
-        │  (ask only for the UI steps / API schema / rule conditions / limits you need).
+3. JIT FETCH ── CACHE CHECK FIRST: before fetching a url, scan working context
+        │  for a takeaway already keyed to that exact url *this task*. Hit → reuse it,
+        │  do NOT re-fetch. Miss → WebFetch the 1–2 urls with a FOCUSED extraction prompt
+        │  (ask only for the UI steps / API schema / rule conditions / limits you need),
+        │  then store the extracted answer keyed to the url (see R3).
         │  Fallback only if WebFetch returns an empty SPA shell:
         │    a) WebFetch  https://r.jina.ai/<the article url>   (reader proxy), or
         │    b) Browser MCP (chrome-devtools): navigate + extract the relevant DOM, or
@@ -42,7 +45,10 @@ ARVIND does **not** pre-load the whole Sprinklr help center. It keeps a fast tie
 ## Guardrails (non-negotiable)
 - **R1 — No pre-emptive scraping.** Never loop-fetch many articles "to be thorough." Fetch the 1–2 the current step needs. Bulk distillation happens only when the user explicitly asks for it.
 - **R2 — Token-conscious extraction.** When fetching, pull only the needed steps / field names / schema / code — never dump full raw HTML into context. Use a focused WebFetch prompt.
-- **R3 — Memory persistence within a task.** After you fetch an article, keep a 2–3 sentence technical takeaway in working context (or `help-enrichment-state`) so you don't re-fetch the same URL later in the same task.
+- **R3 — Cache-then-fetch (in-context fetch ledger).** Treat fetched articles as a within-task cache keyed by URL — the agent equivalent of a `get()`/`set()` cache.
+  - **Check before fetching.** Before any WebFetch, scan working context for an existing takeaway tagged with that exact URL. If one exists *in this task*, **reuse it — do not re-fetch.**
+  - **Store extracted-only on a miss.** When you do fetch, keep a compact takeaway — 2–3 sentences or a short step/field/schema list — **never the raw HTML** (that's R2). Tag it with the source URL so the next loop iteration can match on it.
+  - **Lifetime = the current task.** A takeaway is valid for the duration of one diagnose/implement/lookup task. A genuinely new task re-validates against the source rather than trusting a stale takeaway. (There's no clock — task/session scope is the equivalent of a TTL.)
 - **R4 — Search fallback.** If the catalog has no good match: `WebSearch "site:sprinklr.com/help <query>"` (or the help portal search via Browser MCP) → take the top ~3 `/articles/` hrefs → evaluate the most relevant, then resume at step 3.
 
 ## Growing the KB (so JIT gets rarer over time)

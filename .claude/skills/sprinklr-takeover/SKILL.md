@@ -41,6 +41,21 @@ The browser is driven through the **`chrome-devtools` MCP**, which already gives
 
 These are **scoped exceptions, not bans** — when a control genuinely needs DOM or a screenshot, use it. Being dogmatic and getting stuck is worse than a justified fallback. (Lesson: in past takeovers `evaluate_script` + screenshots were *overused* as the default and caused both token bloat and avoidable errors — `uid` clicks were more reliable.)
 
+### Multi-select / checkbox dropdowns and "Create new" options — drive by a11y, NOT DOM
+
+Many Sprinklr fields (e.g. **Persona**, tag-style pickers) are dropdowns whose options are **checkboxes you must tick to apply the value** — clicking the row text alone may not commit it. Some also offer a **"Create &lt;your text&gt;"** checkbox to add a brand-new value inline. **`click(uid)` on these options is unreliable** (it frequently reports *"did not become interactive"* because the list is virtualized) — so **drive them by keyboard**, which is the reliable accessibility path (and still avoids `evaluate_script`).
+
+**First decide: type, or just pick?** Open the dropdown and snapshot.
+- **Short list whose options actually render in the snapshot** → don't waste a turn typing. Just **`ArrowDown`** to the target option, then **`Enter`** (or `click` its uid if it's exposed and interactive).
+- **Options DON'T render in the a11y tree** (e.g. **Product Seat**) → you can't see the highlight, so **don't blind-count `ArrowDown`s — you'll overshoot** (this happened: 3 downs landed on the 4th option). **Type to filter** even though the list is short.
+- **Long list, options truncated/not all visible, or adding a "Create &lt;value&gt;" entry** → **type to filter first**:
+  1. **`fill`** (or click then type into) the combobox to filter (e.g. type `Sprinkl` → narrows to `Sprinklr Employee`; type the full new value for a "Create" entry).
+  2. **`wait_for`** the option's label to confirm the filter landed.
+  3. **`ArrowDown`** then **`Enter`** to tick/select.
+- Either way, **`take_snapshot` to confirm** the combobox reads "Selected …", then **dismiss the dropdown** (click a neutral spot — best practice #2) before the next field.
+
+> The **same keyboard pattern** handles **single-select listboxes whose options never render in the a11y tree** (e.g. **Product Seat**) — ArrowDown→Enter if it's a short known list, or type-to-filter for a long one. Only fall back to `click(uid)` when the option *is* exposed and interactive. **Never** drop to `evaluate_script` for these — earlier takeovers did, and it was avoidable. *(Best practice #9.)*
+
 ---
 
 ## B. Macro ledger — pull a known path, or record a new one
@@ -62,7 +77,22 @@ Each macro stores **generalized** steps (never `uid`s, never client-specific lit
 ```
 
 ### The loop
-1. **Resolve.** At takeover start, query `sprinklr_macros` (trigram/ilike on `macro_key` + `description` + `tags`) for the task. If a good match exists, use it.
+1. **Resolve — two-phase, column-projected (never `SELECT *`).** Pull the *minimum* payload, in two phases, so candidate matching doesn't drag the heavy `steps` jsonb into context:
+   - **Phase 1 — discovery (no `steps`):** project only the columns you need to choose a match.
+     ```sql
+     SELECT macro_key, description, tags, variables_required
+     FROM sprinklr_macros
+     WHERE status = 'active'
+       AND (macro_key ILIKE '%<term>%' OR description ILIKE '%<term>%' OR '<term>' = ANY(tags));
+     ```
+     Pick the best-matching `macro_key`. The `steps` blob is **not** fetched for the candidate set.
+   - **Phase 2 — hydrate the one chosen macro:**
+     ```sql
+     SELECT macro_key, variables_required, steps
+     FROM sprinklr_macros
+     WHERE macro_key = '<chosen_key>';
+     ```
+   - **Read-time projection rules:** never `SELECT *`; never select the telemetry/audit columns (`id`, `success_count`, `fail_count`, `created_by`, `updated_at`) when *reading* — they're only needed at upsert (step 5). When you show the consultant the resolved path, **summarize the steps in compact prose** — don't echo the full `steps` jsonb back into context.
 2. **Variable prompting.** If the matched macro lists `variables_required` the consultant hasn't given (dashboard name, folder, account, etc.), **pause and ask for them before driving the browser.** Don't guess client-specific values.
 3. **Execute.** For each step: take a fresh `take_snapshot` → resolve `role` + `name` / `name_contains` to a live `uid` → act, substituting `{{variables}}`.
 4. **Fuzzy fallback — NEVER delete a macro.** If a step's target isn't found (a client's instance is customized, a folder is renamed/missing):
@@ -93,7 +123,8 @@ If unsure: inspect with the MCP browser, act with the extension. See `SETUP.md`.
 4. **One change at a time** for risky steps; re-check state (re-snapshot) between steps.
 5. **Dismiss open dropdowns/popovers before clicking.** An open dropdown can overlay buttons/fields — after selecting value(s), click a neutral spot to close it, then check for any newly-revealed fields and click the (previously covered) button. Applies to all dialogs. *(Best practice #2.)*
 6. **In reporting, finish one column/metric fully before starting the next** — the per-column metric picker replaces, it doesn't accumulate. *(Best practice #3.)*
-7. **Never** change credentials, permissions, or unrelated config without asking.
+7. **Mandatory picklist you can't answer? Ask — don't guess.** If a required dropdown/picklist value wasn't specified and you don't know the concrete answer, **ask the consultant directly** (you may suggest a sensible default), but **never pick a picklist value on a whim** — these choices often grant permissions, set routing, or drive behaviour. Don't act as the consultant on a value only they can decide. *(Best practice #10, extends #5.)*
+8. **Never** change credentials, permissions, or unrelated config without asking.
 
 ## Hand back
 - Summarise exactly what changed (object, field, old → new value).
