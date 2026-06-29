@@ -4,6 +4,9 @@ Thumbs.db
 *.swp
 *~
 
+# Scratch a11y snapshot / scratch dumps
+.tmp-*
+
 # Local environment / secrets (none committed; belt-and-braces)
 *.env
 .env*

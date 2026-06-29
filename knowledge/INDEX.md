@@ -298,6 +298,11 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Supervisor Console Best Practices (049) | ✅ | supervisor-console/best-practices.md |
 | Persona Builder (050) | ✅ | supervisor-console/persona-builder.md |
 
+## Asset Manager (Digital Asset Manager) — VERIFIED live prod8 (no course video)
+| Topic | Status | KB file |
+|---|---|---|
+| Asset Manager overview (DAM): views, Create Asset taxonomy (+ Templates/Advertising/Advanced Options sub-menus), filters, approval, folders | ✅ live | asset-manager/overview.md |
+
 ## Loose ends
 - Top-level `01_Process Foundation.mp4` (CCaaS implementation lifecycle + docs) — ✅ `process-foundation.md`.
 - **IVR 151 PCI input** — ✅ re-scraped from full transcript + Gather Customer's Response demo (`ivr/pci-input.md` enriched).
