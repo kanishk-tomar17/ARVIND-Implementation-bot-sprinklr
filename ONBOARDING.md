@@ -21,13 +21,13 @@
 ### 1. Get the agent
 Clone the ARVIND project repo and open it in **Claude Code**. That gives you its instructions, skills, and the full knowledge base.
 
-The repo now lives in the **Raptor-CX** GitHub organisation:
+Clone the ARVIND repo:
 
 ```
-git clone https://github.com/Raptor-CX/Implementation-Bot-Sprinklr.git
+git clone https://github.com/kanishk-tomar17/ARVIND-Implementation-bot-sprinklr.git
 ```
 
-Then `cd` into the folder and open it in Claude Code. Pull regularly (`git pull`) to stay in sync as the KB grows. *(You'll need access to the **Raptor-CX** org / repo — ping Kanishk if the clone is denied.)*
+Then `cd` into the folder and open it in Claude Code. Pull regularly (`git pull`) to stay in sync as the KB grows. *(You'll need access to the repo — ping Kanishk if the clone is denied.)*
 
 ### 2. Browser MCP — inspection & automation (in Claude Code)
 Lets ARVIND read and drive Chrome from the CLI, attached to **your own logged-in Chrome** (no passwords shared). Config ships in `.mcp.json`.

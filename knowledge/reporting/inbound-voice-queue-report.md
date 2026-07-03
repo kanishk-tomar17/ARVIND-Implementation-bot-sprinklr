@@ -24,6 +24,11 @@ Queue / assignment-engine reporting covers: queue reporting from the **Voice rep
 - **Answered (per conversation)** — total **wait time** of an answered call before connecting to an agent.
 - **Call Abandoned SLA** — time the call spent in the queue before being abandoned.
 
+## Per-assignment wait metric (verbatim, in-product hover, confirmed June 2026)
+- **Total Wait Time (Per Assignment)** — "Measures the total time a call had to wait before the call was assigned to an agent. **It includes both Queue time and ring/agent inbox time** for the agent over total calls that entered the queue based on each assignment." So: **Queue time + Ring time**, measured **per assignment leg** (each queue entry = its own record), and aggregated as an **average over calls that entered the queue** (not a raw sum).
+  - **vs. per-call queue metrics** ([[voice-backend-structure]]): *Total Queue Time* = sum of all queue legs, **queue-only**; *First Queue Time* = first leg, **queue-only**. Total Wait Time (Per Assignment) is the only one of the three that **includes ring**.
+  - **First-segment-only use case:** to get "wait until the **first** agent connect, transfers excluded, incl. ring" → use **Total Wait Time (Per Assignment) filtered to the first leg via `Originated in Queue`** (or earliest assignment per Conversation ID). Without that filter, transfer legs are also counted.
+
 ## SLA preset
 SLA metrics need an **SLA preset** (the threshold defining "within SLA") applied at the widget level — logic is set at the work-queue level. Create an SLA preset in the system and apply it to the SLA metrics.
 
