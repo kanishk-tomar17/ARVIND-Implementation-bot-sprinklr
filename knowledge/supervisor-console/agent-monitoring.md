@@ -43,6 +43,14 @@ Filter agents by **location, skills, manager, availability status**.
 
 **Live status values seen:** User Current Status = **Available / Busy / Unavailable / UnAvailable / Connection Issue**; **Login Current Status** = **Logged In / Logged Out**; each with **time-in-status** (e.g. "10d 4h 43m"). "--" = no data for that metric/agent.
 
+### "Connection Issue" status — what it means & why an agent gets it
+An **automatic voice-readiness status** (agent does *not* set it). Sprinklr's **Agent Heartbeat** continuously pings the Unified Routing module with the agent's readiness; if it detects the machine can't reliably take a call, it flips the agent to **Connection Issue** so calls stop routing there (prevents missed/dropped calls). Trips on any of:
+- **Microphone** — muted, wrong input device selected, or browser mic permission denied/blocked.
+- **WebRTC connectivity** — connection drop, poor network quality, or a browser-level issue breaks the WebRTC session.
+- **Silent disconnection / timeout** — heartbeat stops reaching Unified Routing (network loss, session died) and the configured **timeout threshold** is crossed.
+
+**Recovery:** agent fixes the cause (unmute / correct mic, grant browser permission, restore stable network); Sprinklr shows on-screen guidance and only lets the status return to Available once a healthy mic + WebRTC is seen. **Heartbeat interval + timeout threshold are admin-configurable**, so trip speed depends on setup. Supervisors can **filter by Connection Issue** here and in [[queue-monitoring]]. *(Source: help — Agent Readiness overview `agent-readiness-overview/agent-readiness-an-overview/68ff0ab5bdc78e46060b818c`; How to Use Agent Monitoring.)*
+
 ## Notes / gaps
 - Omni-channel; voice live-listen requires shared voice applications + Unified Assignment Engine permission (see [[queue-monitoring]]). Overlaps the Reporting live agent monitoring ([[live-reporting-digital]]).
 - **Verified-live caveat:** the per-screen feature set depends entirely on which Reporting dashboards are shared into the persona — the rich whisper/barge/queue/callback screens from the course videos are *capabilities*, enabled per persona, not guaranteed present in a given environment (this prod8 had only Agent Monitoring).
