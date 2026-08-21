@@ -34,6 +34,17 @@ The two queue-wait metrics differ on **transfers**; queue time and ring time dif
 - Phases: `enters queue →[Queue Time]→ assigned →[Ring Time]→ agent answers`.
 - **Source:** sprinklr.com/help — [Voice Queue (Per Call) Report glossary](https://www.sprinklr.com/help/articles/detailed-report-glossary/voice-queue-per-call-report/674c6556974a651ec2f59034); [Standard Voice reports - Inbound](https://www.sprinklr.com/help/articles/unlock-insights-from-inbound-reports/standard-voice-reports-inbound/63d4f0e8468ae80d393467d1).
 
+## Call-length metrics — which one is "length of the call"
+All live on **Voice Agent Performance** (per agent per call). Definitions per the help glossary:
+- **Total Call Duration** — "the cumulative time spent on the call by an agent"; the **end-to-end** number — includes IVR, queue wait, ring, hold, talk **and ACW/wrap**. Use this for "how long was the call" in the customer's sense.
+- **Talk Time (Agent)** / **Total Talk Time** — time the agent was actually in conversation with the customer (no IVR, no queue, no hold, no wrap). Use this for "how long did they actually speak".
+- **Average Talk Time** = Talk Time ÷ Calls Taken (by the agent).
+- **Handle Time (Agent)** = `total_talk_time + total_hold_time + total_wrap_time` (agent effort, excludes IVR/queue/ring). **Total Handle Time** = same across agents; **Average Handle Time** = per call handled.
+- **Hold Time (Agent)** / Total Hold Time / Average Hold Time; **Total WrapUp Time** = time in ACW (Wrap) state.
+- **Pick list:** customer-perceived call length → **Total Call Duration**; agent productivity → **Handle Time**; pure conversation length (best for QM short/medium/long bucketing) → **Talk Time**.
+- **Bucketing short/medium/long** is *not* a custom metric — a custom metric returns a number, not a band. Do it either as (a) a **Table/bar widget** with Total Call Duration plotted and the duration dimension on the axis, or (b) a **case custom field** ("Call Length Band") set by a case-update rule on call end using the call-duration condition (the same field the sampling rule uses — see [[case-sampling-rule-engine]], which gates voice sampling on `call duration > 2 min`), then report/group on that field.
+- **Source:** sprinklr.com/help — [Voice Agent Performance Report glossary](https://www.sprinklr.com/help/articles/report-glossary/voice-agent-performance-report/6644d31a74e6b777b32864f5); [Voice Report glossary](https://www.sprinklr.com/help/articles/report-glossary/voice-report/664506860930630f76790752) (dimensions only — no duration measures).
+
 ## Notes / gaps
 - Voice equivalent of [[backend-structure-digital]]; drives the voice use-case reports ([[live-reporting-voice]], [[inbound-voice-ivr]], [[inbound-voice-agent-performance]], [[inbound-voice-queue-report]], outbound voice reports).
 - Part of Reporting (Voice): [[live-reporting-voice]], [[inbound-voice-ivr]], [[inbound-voice-agent-performance]], [[inbound-voice-queue-report]].

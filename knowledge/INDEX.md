@@ -108,6 +108,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Stickiness, capacity, timeout settings (026) | ✅ | unified-routing/stickiness-timeout.md |
 | Average wait time / number in queue (027) | ✅ | unified-routing/wait-time-queue.md |
 | Troubleshooting Assignment issues (030) | ✅ | unified-routing/troubleshooting-assignment.md |
+| Queue Standard Metrics config — Short Abandon / Assignment & First-Response SLA thresholds (per queue) | ✅ | unified-routing/queue-standard-metrics.md |
 
 ## Outbound Voice (hyphenated folders `Outbound Voice - <topic>`; 13)
 | Topic | Status | KB file |
@@ -273,7 +274,8 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Volume & SLA (071) | ✅ | reporting/volume-sla.md |
 | Survey Reports (072) | ✅ | reporting/survey-reports.md |
 | Other Modules — KB/GW/Smart Response (073) | ✅ | reporting/other-modules-reporting.md |
-| Voice Reporting Backend Structure (074) | ✅ | reporting/voice-backend-structure.md |
+| Voice Reporting Backend Structure (074) — + wait-time metrics + **call-length metrics** (Total Call Duration / Talk / Handle / Hold / Wrap) | ✅ | reporting/voice-backend-structure.md |
+| **AI Agent (Agentic Bot) Reporting** — Service Analytics data source, Interaction Summary/Omnichannel Case Summary + AI Agent/SmartFAQ Report fields, confirmed gaps (uptime, escalation triggers, new-vs-returning) | ✅ VERIFIED live (prod3, Qrail, 2026-08-13) | reporting/ai-agent-bot-reporting.md |
 | Live Reporting — Voice / Queue Monitoring (075) | ✅ | reporting/live-reporting-voice.md |
 | Inbound Voice — IVR Reporting (076) | ✅ | reporting/inbound-voice-ivr.md |
 | Inbound Voice — Agent Performance (077) | ✅ | reporting/inbound-voice-agent-performance.md |
@@ -302,6 +304,12 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Topic | Status | KB file |
 |---|---|---|
 | Asset Manager overview (DAM): views, Create Asset taxonomy (+ Templates/Advertising/Advanced Options sub-menus), filters, approval, folders | ✅ live | asset-manager/overview.md |
+
+## Platform — Unified Data Connector — VERIFIED live prod3 (Qatar Rail dev)
+| Topic | Status | KB file |
+|---|---|---|
+| Importing call recordings as Voice Cases: 6-step wizard, real field list (`Unique Call Id` + `Call Recording File Name` are the only 2 mandatory), CSV/XLS/XLSX (docs wrong), Single- vs Multi-Case, per-connector Default Language trap | ✅ live | platform/unified-data-connector-voice-import.md |
+| Stereo agent/customer channel reversal on imported recordings — no Sprinklr setting exists; fix in the WAV before zipping, plus how to verify the swap without false positives | ✅ live | platform/voice-recording-channel-swap.md |
 
 ## Loose ends
 - Top-level `01_Process Foundation.mp4` (CCaaS implementation lifecycle + docs) — ✅ `process-foundation.md`.
