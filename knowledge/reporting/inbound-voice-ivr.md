@@ -14,7 +14,7 @@ Traces the call's path through the IVR — which nodes calls went into and where
 A **standard dashboard** (IVR Journey Report). Key metrics (apply **Direction = Inbound** at section level, since every inbound call hits IVR first):
 - **Total IVR Calls** — Call Count.
 - **Calls Completed within IVR** — started in IVR, never requested an agent.
-- **Short Calls in IVR** — below a threshold (default **10 seconds**, configurable via support ticket).
+- **Short Calls in IVR** — below a threshold (default **10 seconds**, **not editable in the UI** — configurable only via a Sprinklr support ticket). Distinct from queue-level **Short Abandoned** (default 5s, editable per work queue — see [[queue-standard-metrics]]).
 - **% Calls Abandoned within IVR** — calls that entered IVR and didn't request an agent.
 - **Average IVR Time** — metric **IVR Time**.
 - **Configure "abandoned/completed within IVR"** as a **custom metric**: filter **Call State NOT containing "Requested for an Agent"** (Call State is the key metric to slice agent-connected vs not).
