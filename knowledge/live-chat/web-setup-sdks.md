@@ -6,10 +6,14 @@
 **SDK** (Software Development Kit) = a set of tools/**code snippets** used to **communicate between the website and the live chat app**. Brands call SDKs at points on their site to pass info into live chat and **govern actions/workflows**.
 
 ## Embedding live chat on a website
-- Add a **JavaScript embed code** to the site → live chat appears automatically.
-- Multi-page site → embed on **all pages**, preferably **near the bottom** of the page code.
+**Help:** [Installing Sprinklr Live Chat on a Website](https://www.sprinklr.com/help/articles/website-installation/installing-on-web/63bc490bf7c92723b10e6eed)
+- Add a **JavaScript embed code** to the site → live chat appears automatically. This is done by the **client's own web team** — Sprinklr/RaptorCX generates the snippet and hands it over, it isn't pushed live by us.
+- **Get the embed code:** **Sprinklr Service → Listen → Brand Care → Live Chat Care** → locate the app → **three dots → Embed Code** → choose **Modern** skin (recommended over legacy Classic) → copy the generated JS snippet.
+- **Code structure:** `window.sprChatSettings = { appId: "XXXXXXXXX", skin: "MODERN" };` — `appId` uniquely identifies the Live Chat application.
+- **Placement:** near the **bottom of the site's HTML, before `</body>`**. Consider a small delay before the script executes so it doesn't block critical page resources.
+- **Multi-page site** → embed on **every page** where chat should appear.
+- **Alternative:** can also be embedded via an **iFrame** (environment + application ID in the source URL) to place the widget in a specific page section instead of a floating widget.
 - **Internal testing:** use the test link, add your **application ID + environment**, **whitelist the URL**, then test.
-- **Get the embed code:** Launchpad → **Live Chat Care** → the app → **three dots → Embed** → choose **Modern** (recommended) or Classic skin → copy the **script** to share with the client.
 
 ## Website-integration use cases (via SDKs)
 Tested in DevTools → Console (right-click → Inspect → Console) on the deployed UAT site:

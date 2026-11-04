@@ -27,6 +27,9 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Case Stream — Filters, SLA, Case Inactivity Timers (035) | ✅ | care-console/case-stream-sla.md |
 | Case Control buttons — GP, CFs and macros (036) | ✅ | care-console/case-control-buttons.md |
 | Agent Assist — AI features in Care Console (034) | ✅ | care-console/agent-assist-ai.md |
+| Agent Copilot widget — add to a record page | ✅ | care-console/agent-copilot-widget.md |
+| Reply Box AI+ (Reword/Fix Spelling & Grammar/Tone/Translate) | ✅ | care-console/reply-assistance-ai-plus.md |
+| Smart Compose reporting (Compose/Received/Rendered/Accepted funnel, SLA/CSAT with-vs-without) | ✅ | care-console/smart-compose-reporting.md |
 | Shortcuts — Canned Responses & Macros (033) | ✅ | care-console/shortcuts.md |
 | Layouts based on channels (037) | ✅ | care-console/layouts-by-channel.md |
 | Standard & Custom widgets (040) | ✅ | care-console/widgets.md |
@@ -54,6 +57,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Groovy Scripts (116) | ✅ | guided-workflow/groovy-scripts.md |
 | Variables & Resource Manager (117) | ✅ | guided-workflow/variables-resource-manager.md |
 | Records manipulation (118, subfolder "…CreateGetUpdate") | ✅ | guided-workflow/records-manipulation.md |
+| Executing via Rules (help article, no video) | ✅ | guided-workflow/executing-via-rules.md |
 | Record Page Basics (119) | ✅ | guided-workflow/record-page-basics.md |
 | Public-facing Guided Workflows (120) | ✅ | guided-workflow/public-facing.md |
 
@@ -93,6 +97,8 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Proactive Prompt Builder and Rule Configuration (095) | ✅ | live-chat/proactive-prompts.md |
 | Video call and co-browsing configuration (094) | ✅ | live-chat/video-cobrowsing.md |
 | Chat deflection (088) | ✅ | live-chat/chat-deflection.md |
+| Bold / rich-text formatting — assets, bots, agent replies | ✅ | live-chat/rich-text-formatting.md |
+| Custom fonts / typography — Live Chat + Surveys | ✅ | live-chat/custom-fonts-typography.md |
 
 ## Unified Routing (hyphenated folders `Unified Routing - <topic>`; 11)
 | Topic | Status | KB file |
@@ -107,6 +113,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Smart routing (028) | ✅ | unified-routing/smart-routing.md |
 | Stickiness, capacity, timeout settings (026) | ✅ | unified-routing/stickiness-timeout.md |
 | Average wait time / number in queue (027) | ✅ | unified-routing/wait-time-queue.md |
+| **Estimated Wait Time (EWT v2)** — formula, bucket key, rounding, **Work Queue Properties field reference + `-1` position**, debug checklist & fixes | ✅ | unified-routing/estimated-wait-time-v2.md |
 | Troubleshooting Assignment issues (030) | ✅ | unified-routing/troubleshooting-assignment.md |
 | Queue Standard Metrics config — Short Abandon / Assignment & First-Response SLA thresholds (per queue) | ✅ | unified-routing/queue-standard-metrics.md |
 
@@ -148,6 +155,9 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Integration / Consumption & Touchpoints (Smart Assist, Smart Comprehend, AI+, Bot) (128) | ✅ (PDF) | knowledge-base/integration.md |
 | Knowledge Base Reporting (dashboard import, visualisations) (130) | ✅ (PDF) | knowledge-base/reporting.md |
 | Change Management (Inbound/Outbound Changesets) (131) | ✅ (PDF) | knowledge-base/change-management.md |
+| External source-of-truth sync (SharePoint/CMS → KB): no OOTB connector (Zendesk only), External API ingestion architecture + scheduling, **no delete support**, SharePoint integration is DAM-only/one-time | ✅ live | knowledge-base/external-sync-source-of-truth.md |
+| Uploading PDFs/documents as knowledge: KB articles do NOT accept PDFs; three separate AI content-source stores (FAQ+ RAG, AI Agent, Agent Copilot), formats `pdf/txt/html/docx/xlsx/pptx/zip`, 25 MB/file | ✅ live | knowledge-base/pdf-document-ingestion.md |
+| CSV import & HTML export (column spec, `Base Article Id` translation linking, export file layout, splitting a monolithic FAQ) | ✅ live | knowledge-base/csv-import-export.md |
 
 ## Sprinklr Services — Governance (folder `Sprinklr Services - Governance`; 002–008, 7 videos)
 | Topic | Status | KB file |
@@ -159,6 +169,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Custom Fields (006) | ✅ | governance/custom-fields.md |
 | Understanding Macros (007) | ✅ | governance/macros.md |
 | Understanding Queues (008) | ✅ | governance/queues.md |
+| PII Masking & Redaction — Audit and Compliance templates, the 3 "Mask after time" modes, redact-on-close via Case Update rule (keeps PII through transfers), Permanent vs Conditional, regex hard masking | ✅ | governance/pii-masking.md |
 
 ## Sprinklr Services — Rule Engine (folder `Sprinklr Services - Rule Engine`; 009–015, 7 videos)
 | Topic | Status | KB file |
@@ -245,6 +256,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | Apple Messages for Business Account Addition (055) | ✅ | messaging/apple-messages-account-addition.md |
 | Google Business Messaging Account Addition (056) | ✅ | messaging/google-business-messaging-account-addition.md |
 | WhatsApp Supported Templates (057) | ✅ | messaging/whatsapp-templates.md |
+| WhatsApp Voice Notes Transcription — bot visibility | ✅ | messaging/whatsapp-voice-notes-transcription.md |
 | Facebook Supported Templates (058) | ✅ | messaging/facebook-templates.md |
 | Apple Messages for Business Supported Templates (059) | ✅ | messaging/apple-messages-templates.md |
 | Google Business Messaging Supported Templates (060) | ✅ | messaging/google-business-messaging-templates.md |
@@ -256,7 +268,7 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 | AI Scoring / Automated QM (176) | ✅ | quality-management/ai-scoring.md |
 | Agent Appeals Process (177) | ✅ | quality-management/agent-appeals-process.md |
 | Calibration (178) | ✅ | quality-management/calibration.md |
-| Case Sampling via Rule Engine (179) | ✅ | quality-management/case-sampling-rule-engine.md |
+| Case Sampling via Rule Engine (179) — + **percentage-based sampling workaround** (random 1–100 draw on case create) + manual-allocation pool pattern | ✅ | quality-management/case-sampling-rule-engine.md |
 
 ## Reporting (folder: `Reporting`; topics 061–084; 24)
 | Topic | Status | KB file |
@@ -308,8 +320,26 @@ Top-level `01_Process Foundation.mp4` = overall CCaaS Voice training/process ove
 ## Platform — Unified Data Connector — VERIFIED live prod3 (Qatar Rail dev)
 | Topic | Status | KB file |
 |---|---|---|
+| UDC overview: entity types vs supported connectors, connection types, integration types (Insert/Upsert/Update/**Sync deletes**/Patch), mapping screen, export module, activity log, SM enablement gate; KB articles as a UDC entity unverified | ✅ live | platform/unified-data-connector.md |
 | Importing call recordings as Voice Cases: 6-step wizard, real field list (`Unique Call Id` + `Call Recording File Name` are the only 2 mandatory), CSV/XLS/XLSX (docs wrong), Single- vs Multi-Case, per-connector Default Language trap | ✅ live | platform/unified-data-connector-voice-import.md |
 | Stereo agent/customer channel reversal on imported recordings — no Sprinklr setting exists; fix in the WAV before zipping, plus how to verify the swap without false positives | ✅ live | platform/voice-recording-channel-swap.md |
+
+## Platform — Modules
+| Topic | Status | KB file |
+|---|---|---|
+| Native spelling/grammar check (red/green underline, personal dictionary, pre-publish block rule) across all publishers; reporting metrics via Outbound Message widget | ✅ help | platform/spelling-grammar-check-outbound.md |
+
+## Platform — Entity Studio / Record Manager
+| Topic | Status | KB file |
+|---|---|---|
+| Bulk delete / bulk actions on entity records (custom or standard): only **Standard** Record Managers support it, Reporting & Pivot don't; the configurable Actions section is NOT where it comes from; 4 undocumented gaps to verify in-tenant | ✅ help | platform/record-manager-bulk-actions.md |
+
+## AI+ Studio — BYOM
+| Topic | Status | KB file |
+|---|---|---|
+| Bring Your Own Model: LLM endpoint only, must support function/tool calling, can't mix with Sprinklr AI in one deployment — and why it's the wrong tool for "call an external chatbot API" | ✅ help | ai-studio/byom.md |
+| AI+ Reporting (Care Reporting → AI+ Reporting data source): generic Request Count/tokens/latency, dims incl. Configuration Set & Prompt Node ID — not broken out per reply-box option, verify in-tenant | ✅ help | ai-studio/ai-plus-reporting.md |
+| Customer Memory (Contextual Memory) for AI Agents: off by default, auto-injected into the prompt, semantic + episodic records per memory profile, check Audit Logs / Injection Prompt — anonymous chats are profiled by IP+browser (consultant-reported, not in the article) so memory follows the browser, verify in-tenant | ✅ help | ai-studio/customer-memory.md |
 
 ## Loose ends
 - Top-level `01_Process Foundation.mp4` (CCaaS implementation lifecycle + docs) — ✅ `process-foundation.md`.

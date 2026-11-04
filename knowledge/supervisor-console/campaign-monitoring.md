@@ -15,6 +15,24 @@ Gives a clear view of campaign conversion: how much data ingested, calls done/ab
 - **Add more agents** to the campaign if data is huge and agents are few.
 - Plus all core monitoring actions (live-listen, edit/add skills, log out via activity, send message, change agent status, manage columns).
 
+## Customizable View — columns & sharing (how to add a column for everyone)
+Campaign Monitoring does **not** take its columns from a Reporting dashboard — it has its own **Views** system, owned by supervisors/campaign managers (no admin needed). The view dropdown sits **top-left** of the screen (e.g. "Default View ⌄"); the section selector next to the agent table (e.g. "Agent Monitoring / All Agents") picks which sub-view you're editing.
+
+**To add a column and make it visible to other people:**
+1. **Options (⋮) → Manage Views → Create View**.
+2. Name the view and **specify the users / user groups / workspaces / workspace groups to share it with** → **Save**.
+3. In the new view, open **Manage Columns** → add/remove columns or metrics. Columns are split **Active Columns** (toggled on, shown in the table) vs **Inactive Columns**.
+4. **⋮ → Update View → Save.** Column changes are **not** persisted otherwise.
+5. Users pick the view from the top-left dropdown.
+
+**Scope caveats (important):**
+- A view's column set is **per-view, and views are personalized** — editing **Default View** changes it for you only. To reach a whole team you must **create a shared view**.
+- Sharing targets **users / user groups / workspaces** — **not personas**. "Everyone on persona X" = share with the **user group** that carries that persona; there is no persona-level column default here.
+- Shared views are opt-in on the dropdown, not forced as the landing view.
+- The Agent View dashboard can also be pushed via **Share Dashboard** (multiple users or workspaces).
+
+*(Source: help — Customizable View in Campaign Monitoring `campaign-monitoring/customizable-view-in-campaign-monitoring/655478fa65649c53cad9df3e`.)*
+
 ## Configuration
 Same as agent/queue monitoring (support ticket to enable + customise; voice apps shared; skills + Unified Assignment Engine permission).
 

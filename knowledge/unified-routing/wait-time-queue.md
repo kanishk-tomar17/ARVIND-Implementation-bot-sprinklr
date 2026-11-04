@@ -22,7 +22,7 @@ After assigning a case to a queue, check the current wait time and branch:
 - **Auto-response:** build a **text template in Asset Manager** with **work-queue property placeholders** — wait time (rounded to nearest 5-min window / hours / days), exact ms, position in queue, and **skill-aware** wait time/position. Send via a rule action (**auto-respond / send SMS**, choose account + template). Can run **recursively**.
 
 ## Using wait time in IVR / bots
-- **IVR — Work Queue Properties node:** select queue + name a variable → exposes **wait time (ms)**, **wait time readable** (play as a prompt, e.g. "2 minutes"), **number of pending cases** (position), **agents available**, **idle agents** (available + free capacity). Use in a decision box / operator-says node (e.g. no agents available → play out-of-business-hours message).
+- **IVR — Work Queue Properties node:** select queue + name a variable → exposes `WAIT_TIME_IN_MILLIS`, `WAIT_TIME_READABLE`, `NUMBER_OF_PENDING_CASES`, `NUMBER_OF_AGENTS_AVAILABLE`, `IDLE_AGENTS` (available + free capacity), `POSITION_IN_WORK_QUEUE` (**−1 = case not yet in queue**), `NUMBER_OF_LOGGED_IN_AGENTS`, `MAX_IDLE_TIME_OF_AGENT`, `OLDEST_CUSTOMER_WAIT_TIME`. ⚠️ Only the wait-time fields are historical — the rest are live. See [[estimated-wait-time-v2]] before announcing wait time to a customer. Use in a decision box / operator-says node (e.g. no agents available → play out-of-business-hours message).
 - **Conversational AI bot:** same **Work Queue Properties** node for prompts.
 - ⚠️ If a **Set Skill node precedes** the Work Queue Properties node, the properties reflect **only matching-skill** agents/cases (e.g. English agents and English cases).
 
